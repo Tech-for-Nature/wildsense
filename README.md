@@ -4,7 +4,13 @@ Dashboard for AMBER project currently hosted [here](https://ami-system.github.io
 
 ## Running locally
 
-This page is built using jekyll. The source files are saved in `_docs`. To test the page locally, you will need to [install jekyll](https://jekyllrb.com/docs/installation/) and run:
+This page is built using jekyll. The source files are saved in `_docs`. To test the page locally, you will need to [install jekyll](https://jekyllrb.com/docs/installation/) and make sure you are in the `docs` dir: 
+
+```
+cd docs
+```
+
+then run:
 
 ```
 bundle exec jekyll serve

@@ -38,9 +38,9 @@ Follow these step-by-step instructions to add a new story page to the AMBER Dash
     ```
 
 ## 6. Add to the landing page carousel
-- Update the carousel in `index.html` to include your new story. Replace `/* place for a new story */` with:
+- Update the carousel in `index.html` to include your new story. Replace `<!-- place for a new story -->` with:
     ```html
-    /* new story */
+    <!-- new story -->
     <a href="stories/story_new/story_new.html" class="story-carousel-card text-decoration-none">
     <img src="stories/story_new/story_new.jpg" class="story-carousel-img" alt="New Story" style="width:100%; height:100%; object-fit:cover; aspect-ratio:8/9; display:block;" />
     <div class="story-carousel-content">
