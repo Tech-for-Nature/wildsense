@@ -15,10 +15,10 @@ layout: amber
 
   <style>
     .story-carousel-card {
-      width: 270px !important;
-      min-width: 270px !important;
-      max-width: 270px !important;
-      height: 240px !important;
+      width: 320px !important;
+      min-width: 320px !important;
+      max-width: 320px !important;
+      height: 280px !important;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -28,24 +28,24 @@ layout: amber
     }
     .story-carousel-img {
       width: 100% !important;
-      height: 110px !important;
+      height: 140px !important;
       object-fit: cover;
       display: block;
     }
     .story-carousel-content {
-      font-size: 0.7rem;
-      padding: 0.2rem 0.3rem 0 0.3rem;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.4rem 0 0.4rem;
       text-align: left;
     }
     @media (max-width: 600px) {
       .story-carousel-card {
-        width: 230px !important;
-        min-width: 230px !important;
-        max-width: 230px !important;
-        height: 260px !important;
+        width: 280px !important;
+        min-width: 280px !important;
+        max-width: 280px !important;
+        height: 300px !important;
       }
       .story-carousel-img {
-        height: 90px !important;
+        height: 120px !important;
       }
     }
     .landing-container {
@@ -87,6 +87,17 @@ layout: amber
       .landing-container .text-col {
         text-align: center;
         padding-top: 1.5rem;
+      }
+    }
+    .carousel-container {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    @media (max-width: 768px) {
+      .carousel-container {
+        max-width: 95%;
+        padding: 0 1rem;
       }
     }
   </style>
@@ -137,7 +148,8 @@ layout: amber
   <!-- Stories Carousel Section -->
   <div class="stories-section mt-3">
     <h2 class="text-center mb-3">Featured Stories</h2>
-    <div id="storiesCarousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-container">
+      <div id="storiesCarousel" class="carousel slide" data-bs-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="stories-viewport overflow-hidden" id="carouselViewport">
@@ -206,6 +218,7 @@ layout: amber
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
     </div>
   </div>
 </div>
