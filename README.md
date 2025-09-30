@@ -1,10 +1,10 @@
-# Ami Dashboard
+# AMBER Dashboard
 
 Dashboard for AMBER project currently hosted [here](https://ami-system.github.io/amber-dashboard/).
 
 ## Running locally
 
-This page is built using jekyll. The source files are saved in `_docs`. To test the page locally, you will need to [install jekyll](https://jekyllrb.com/docs/installation/) and make sure you are in the `docs` dir: 
+This page is built using jekyll. The source files are saved in `_docs`. To test the page locally, you will need to [install jekyll](https://jekyllrb.com/docs/installation/) and make sure you are in the `docs` dir:
 
 ```
 cd docs
