@@ -372,7 +372,7 @@
         "camera_id": "7125ED6F",
         "system_id": "sys000045",
         "status": "active",
-        "image_count": "106936",
+        "image_count": "464480",
         "description": "Edge-of-campus site on Singapore's western side, situated between student halls and a forested area.",
         "thumbnail_path": "../../assets/deployments/singapore/singapore_ntu.jpg"
     },
@@ -424,7 +424,7 @@
         "camera_id": "EF724A93",
         "system_id": "sys000049",
         "status": "active",
-        "image_count": "223540",
+        "image_count": "395976",
         "description": "A vegetated bridge over the Bukit Timah Expressway connecting the Bukit Timah Nature Reserve with the Central Catchment Nature Reserve, designed to restore fragmented habitats.",
         "thumbnail_path": "../../assets/deployments/singapore/singapore_ecolink.jpg"
     },
@@ -437,7 +437,7 @@
         "camera_id": "E1CDFB43",
         "system_id": "sys000050",
         "status": "active",
-        "image_count": "220397",
+        "image_count": "431062",
         "description": "One of Singapore's largest urban parks, featuring ponds and the Kallang River in the Singapore's central region.",
         "thumbnail_path": "../../assets/deployments/singapore/singapore_bamk.jpg"
     },
@@ -463,7 +463,7 @@
         "camera_id": "C30D1F29",
         "system_id": "sys000052",
         "status": "active",
-        "image_count": "223633",
+        "image_count": "427832",
         "description": "Southwestern national garden and community park by Jurong Lake, with themed gardens and recreational spaces.",
         "thumbnail_path": "../../assets/deployments/singapore/singapore_jlg.jpg"
     },
@@ -476,7 +476,7 @@
         "camera_id": "68739DF0",
         "system_id": "sys000053",
         "status": "active",
-        "image_count": "133837",
+        "image_count": "133835",
         "description": "The first and only tropical botanic garden on the UNESCO's World Heritage List, in central south Singapore.",
         "thumbnail_path": "../../assets/deployments/singapore/singapore_sbg.jpg"
     },
@@ -489,7 +489,7 @@
         "camera_id": "34F0B1E9",
         "system_id": "sys000054",
         "status": "active",
-        "image_count": "145841",
+        "image_count": "249752",
         "image_name": "RCH.heic",
         "description": "Rail Corridor Holland Green - A 24 km green corridor on a former railway line, enabling wildlife movement and public recreation.",
         "thumbnail_path": "../../assets/deployments/singapore/singapore_RCH.jpg"
@@ -503,7 +503,7 @@
         "camera_id": "C60F4B58",
         "system_id": "sys000084",
         "status": "active",
-        "image_count": "0",
+        "image_count": "61137",
         "description": "",
         "thumbnail_path": "../../assets/deployments/kenya_museums.jpg"
     },
@@ -516,9 +516,22 @@
         "camera_id": "DA5BE238",
         "system_id": "sys000085",
         "status": "active",
-        "image_count": "0",
+        "image_count": "23868",
         "description": "",
         "thumbnail_path": "../../assets/deployments/kenya_dekut.jpg"
+    },
+    {
+        "country": "Kenya",
+        "deployment_id": "dep000096",
+        "name": "AMI-EMBU",
+        "deployment_key": "AMI-EMBU - DA5BE238",
+        "location_id": "loc000079",
+        "camera_id": "DA5BE238",
+        "system_id": "sys000085",
+        "status": "active",
+        "image_count": "132522",
+        "description": "",
+        "thumbnail_path": ""
     },
     {
         "country": "Thailand",
@@ -529,7 +542,7 @@
         "camera_id": "AED93410",
         "system_id": "sys000064",
         "status": "active",
-        "image_count": "102715",
+        "image_count": "266897",
         "description": "A restored wetland with diverse vegetation in Thailand's vast National Science Museum.",
         "thumbnail_path": "../../assets/deployments/thailand/20240724_114840.jpg"
     },
@@ -542,7 +555,7 @@
         "camera_id": "17EF46D3",
         "system_id": "sys000065",
         "status": "active",
-        "image_count": "140224",
+        "image_count": "454860",
         "description": "A remote clearing in Thailand's rain forest.",
         "thumbnail_path": "../../assets/deployments/thailand/20240725_143512.jpg"
     },
@@ -568,8 +581,8 @@
         "camera_id": "B625F173",
         "system_id": "sys000067",
         "status": "active",
-        "image_count": "96684",
-        "description": "    Abandoned car graveyard in a remote clearing in Thailand's rain forest.",
+        "image_count": "226310",
+        "description": "Abandoned car graveyard in a remote clearing in Thailand's rain forest.",
         "thumbnail_path": "../../assets/deployments/thailand/20240727_094028.jpg"
     },
     {
@@ -581,7 +594,7 @@
         "camera_id": "2CBE05F9",
         "system_id": "sys000068",
         "status": "active",
-        "image_count": "95706",
+        "image_count": "413578",
         "description": "Concrete dam in a dried-up river bed in Thailand's rain forest.",
         "thumbnail_path": "../../assets/deployments/thailand/20240727_104153.jpg"
     },
@@ -594,8 +607,8 @@
         "camera_id": "4C2B89AF",
         "system_id": "sys000031",
         "status": "active",
-        "image_count": "105608",
-        "description": "This system is set up in a small forest located within the grounds of the University of Costa Rica in the capital, San Jose, known as the ‘bosquesito', meaning little forest in Spanish. It's a patch of secondary forest within an urban jungle, enjoyed by students and containing a butterfly house used for studies. Data from this system will show us how diverse an unconnected patch of forest can be within a city.",
+        "image_count": "266857",
+        "description": "This system is set up in a small forest located within the grounds of the University of Costa Rica in the capital, San Jose, known as the 'bosquesito', meaning little forest in Spanish. It's a patch of secondary forest within an urban jungle, enjoyed by students and containing a butterfly house used for studies. Data from this system will show us how diverse an unconnected patch of forest can be within a city.",
         "thumbnail_path": "../../assets/deployments/costarica/butterfly.jpg"
     },
     {
@@ -607,7 +620,7 @@
         "camera_id": "EC4AB109",
         "system_id": "sys000032",
         "status": "active",
-        "image_count": "373904",
+        "image_count": "507613",
         "description": "This system is located within the grounds of La Selva Research Station, which contains 1,600 hectares of well-preserved old-growth and recovering wet lowland tropical forest. La Selva is located on the Caribbean side of Costa Rica and lies within a 4-6 km wide forested corridor that connects La Selva at 35 m above sea level, to the Barva Volcano at 2,906 m, and is one of the best-preserved elevational gradients in the tropics. The system itself is located on the edge of the forest to help us understand forest edge habitats.",
         "thumbnail_path": "../../assets/deployments/costarica/forest_edge.jpg"
     },
@@ -620,7 +633,7 @@
         "camera_id": "5794FB2E",
         "system_id": "sys000033",
         "status": "active",
-        "image_count": "378013",
+        "image_count": "429379",
         "description": "This system is located within the grounds of La Selva Research Station, which contains 1,600 hectares of well-preserved old-growth and recovering wet lowland tropical forest. La Selva is located on the Caribbean side of Costa Rica and lies within a 4-6 km wide forested corridor that connects La Selva at 35 m above sea level, to the Barva Volcano at 2,906 m, and is one of the best-preserved elevational gradients in the tropics. The system itself is located on the edge of the forest to help us understand forest edge habitats.",
         "thumbnail_path": "../../assets/deployments/costarica/swamp.jpg"
     },
@@ -633,7 +646,7 @@
         "camera_id": "E601A49B",
         "system_id": "sys000034",
         "status": "active",
-        "image_count": "92367",
+        "image_count": "232656",
         "description": "This system is located within the grounds of La Selva Research Station, which contains 1,600 hectares of well-preserved old-growth and recovering wet lowland tropical forest. La Selva is located on the Caribbean side of Costa Rica and lies within a 4-6 km wide forested corridor that connects La Selva at 35 m above sea level, to the Barva Volcano at 2,906 m, and is one of the best-preserved elevational gradients in the tropics. The system itself is located deep within a patch of old-growth forest, providing insight into the specialist species that live here.",
         "thumbnail_path": "../../assets/deployments/costarica/old_growth.jpg"
     },
@@ -672,8 +685,8 @@
         "camera_id": "3F1C4908",
         "system_id": "sys000037",
         "status": "active",
-        "image_count": "287366",
-        "description": "This system is located within the Wilson Botanical Garden, part of “La Amistad Biosphere Reserve” that encompasses 472,000 hectares of park land and buffer zones centered in the southern Talamanca mountain range in Costa Rica’s South Pacific, at 1,200 m (3,900 ft) above sea level. The system itself is located within the grounds of the botanical garden and will provide insights into the diversity in this cultivated landscape.",
+        "image_count": "472299",
+        "description": "This system is located within the Wilson Botanical Garden, part of \"La Amistad Biosphere Reserve\" that encompasses 472,000 hectares of park land and buffer zones centered in the southern Talamanca mountain range in Costa Rica's South Pacific, at 1,200 m (3,900 ft) above sea level. The system itself is located within the grounds of the botanical garden and will provide insights into the diversity in this cultivated landscape.",
         "thumbnail_path": "../../assets/deployments/costarica/botanical_garden.jpg"
     },
     {
@@ -685,8 +698,8 @@
         "camera_id": "961AC5EB",
         "system_id": "sys000038",
         "status": "active",
-        "image_count": "257508",
-        "description": "This system is located within a patch of premontane forest adjacent to the Wilson Botanical Garden, part of “La Amistad Biosphere Reserve” that encompasses 472,000 hectares of park land and buffer zones centered in the southern Talamanca mountain range in Costa Rica's South Pacific, at 1,200 m (3,900 ft) above sea level. The system will provide insights into the diversity that exists in premontane habitat.",
+        "image_count": "362438",
+        "description": "This system is located within a patch of premontane forest adjacent to the Wilson Botanical Garden, part of \"La Amistad Biosphere Reserve\" that encompasses 472,000 hectares of park land and buffer zones centered in the southern Talamanca mountain range in Costa Rica's South Pacific, at 1,200 m (3,900 ft) above sea level. The system will provide insights into the diversity that exists in premontane habitat.",
         "thumbnail_path": "../../assets/deployments/costarica/premontane.jpg"
     },
     {
@@ -698,7 +711,7 @@
         "camera_id": "04EC1D6F",
         "system_id": "sys000039",
         "status": "active",
-        "image_count": "6719",
+        "image_count": "14701",
         "description": "This system is located on the Osa Peninsula in the pacific southwest. Covering just 5% of Costa Rica's landmass, but holding 50% of its biodiversity, this remote corner of Costa Rica is a haven for wildlife. The system itself can be found within the grounds of Osa Conservations research station, Piro, in a small clearing surrounded by old-growth forest. The insights from this system will allow us to understand the biodiversity in this hotspot.",
         "thumbnail_path": "../../assets/deployments/costarica/station.jpg"
     },
@@ -711,7 +724,7 @@
         "camera_id": "D23BAE61",
         "system_id": "sys000040",
         "status": "active",
-        "image_count": "3419",
+        "image_count": "160707",
         "description": "This system is located on the Osa Peninsula in the pacific southwest. Covering just 5% of Costa Rica's landmass, but holding 50% of its biodiversity, this remote corner of Costa Rica is a haven for wildlife. The system itself can be found within the grounds of Osa Conservations research station, Piro, within an area of forest undergoing restoration. The insights from this system will allow us to understand how biodiversity changes during the restoration process.",
         "thumbnail_path": "../../assets/deployments/costarica/restoration.jpg"
     },
@@ -724,116 +737,7 @@
         "camera_id": "E43B615A",
         "system_id": "sys000017",
         "status": "active",
-        "image_count": "47740"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000018",
-        "name": "trap_2",
-        "deployment_key": "trap_2 - BEF510C3",
-        "location_id": "loc000018",
-        "camera_id": "BEF510C3",
-        "system_id": "sys000018",
-        "status": "active",
-        "image_count": "32104"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000020",
-        "name": "trap_4",
-        "deployment_key": "trap_4 - 2867OE4D",
-        "location_id": "loc000020",
-        "camera_id": "2867OE4D",
-        "system_id": "sys000020",
-        "status": "active",
-        "image_count": "88683"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000021",
-        "name": "trap_5",
-        "deployment_key": "trap_5 - 94CDAF87",
-        "location_id": "loc000021",
-        "camera_id": "94CDAF87",
-        "system_id": "sys000021",
-        "status": "active",
-        "image_count": "77763"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000036",
-        "name": "El Copé",
-        "deployment_key": "El Copé - 7A5B3F6C",
-        "location_id": "loc000036",
-        "camera_id": "7A5B3F6C",
-        "system_id": "sys000036",
-        "status": "active",
-        "image_count": "89542",
-        "description": "",
-        "thumbnail_path": "../../assets/deployments/panama_el_cope.jpg"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000037",
-        "name": "Pipeline Road",
-        "deployment_key": "Pipeline Road - 8D4E9A2B",
-        "location_id": "loc000037",
-        "camera_id": "8D4E9A2B",
-        "system_id": "sys000037",
-        "status": "active",
-        "image_count": "156389",
-        "description": "",
-        "thumbnail_path": "../../assets/deployments/panama_pipeline_road.jpg"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000038",
-        "name": "Gamboa",
-        "deployment_key": "Gamboa - 1F7C8E5D",
-        "location_id": "loc000038",
-        "camera_id": "1F7C8E5D",
-        "system_id": "sys000038",
-        "status": "active",
-        "image_count": "203175",
-        "description": "",
-        "thumbnail_path": "../../assets/deployments/panama_gamboa.jpg"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000039",
-        "name": "Barro Colorado",
-        "deployment_key": "Barro Colorado - 9E6A4B7F",
-        "location_id": "loc000039",
-        "camera_id": "9E6A4B7F",
-        "system_id": "sys000039",
-        "status": "active",
-        "image_count": "178654",
-        "description": "",
-        "thumbnail_path": "../../assets/deployments/panama_barro_colorado.jpg"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000040",
-        "name": "Canopy Tower",
-        "deployment_key": "Canopy Tower - 5B2D8C9A",
-        "location_id": "loc000040",
-        "camera_id": "5B2D8C9A",
-        "system_id": "sys000040",
-        "status": "active",
-        "image_count": "134267",
-        "description": "",
-        "thumbnail_path": "../../assets/deployments/panama_canopy_tower.jpg"
-    },
-    {
-        "country": "Panama",
-        "deployment_id": "dep000017",
-        "name": "trap_1",
-        "deployment_key": "trap_1 - E43B615A",
-        "location_id": "loc000017",
-        "camera_id": "E43B615A",
-        "system_id": "sys000017",
-        "status": "active",
-        "image_count": "223497",
+        "image_count": "47740",
         "description": "",
         "thumbnail_path": "../../assets/deployments/panama_trap_1.jpg"
     },
@@ -846,7 +750,7 @@
         "camera_id": "BEF510C3",
         "system_id": "sys000018",
         "status": "active",
-        "image_count": "189234",
+        "image_count": "32104",
         "description": "",
         "thumbnail_path": "../../assets/deployments/panama_trap_2.jpg"
     },
@@ -859,7 +763,7 @@
         "camera_id": "CA9D742F",
         "system_id": "sys000019",
         "status": "active",
-        "image_count": "167823",
+        "image_count": "78042",
         "description": "",
         "thumbnail_path": "../../assets/deployments/panama_trap_3.jpg"
     },
@@ -872,7 +776,7 @@
         "camera_id": "2867OE4D",
         "system_id": "sys000020",
         "status": "active",
-        "image_count": "145678",
+        "image_count": "88683",
         "description": "",
         "thumbnail_path": "../../assets/deployments/panama_trap_4.jpg"
     },
@@ -885,7 +789,7 @@
         "camera_id": "94CDAF87",
         "system_id": "sys000021",
         "status": "active",
-        "image_count": "198765",
+        "image_count": "77755",
         "description": "",
         "thumbnail_path": "../../assets/deployments/panama_trap_5.jpg"
     },
@@ -1021,16 +925,19 @@
     },
     {
         "country": "Japan",
-        "deployment_id": "dep000096",
-        "name": "Tokyo_1",
-        "deployment_key": "Tokyo_1 - 2B3C4D5E",
-        "location_id": "loc000080",
-        "camera_id": "2B3C4D5E",
-        "system_id": "sys000086",
+        "deployment_id": "dep000105",
+        "name": "Chuo Uni Korakuen",
+        "deployment_key": "Chuo Uni Korakuen",
         "status": "active",
-        "image_count": "12500",
-        "description": "",
-        "thumbnail_path": "../../assets/deployments/japan_tokyo_1.jpg"
+        "image_count": "37679"
+    },
+    {
+        "country": "Japan",
+        "deployment_id": "dep000106",
+        "name": "Chuo Uni Korakuen",
+        "deployment_key": "Chuo Uni Tama",
+        "status": "active",
+        "image_count": "30821"
     },
     {
         "country": "Namibia",
@@ -1044,5 +951,60 @@
         "image_count": "8300",
         "description": "",
         "thumbnail_path": "../../assets/deployments/namibia_windhoek_desert.jpg"
+    },
+    {
+        "country": "Nigeria",
+        "deployment_id": "dep000117",
+        "name": "APLORI_AMI01",
+        "deployment_key": "APLORI_AMI01",
+        "status": "active",
+        "image_count": "77223",
+        "description": ""
+    },
+    {
+        "country": "Nigeria",
+        "deployment_id": "dep000118",
+        "name": "APLORI_AMI02",
+        "deployment_key": "APLORI_AMI02",
+        "status": "active",
+        "image_count": "3497",
+        "description": ""
+    },
+    {
+        "country": "Anguilla",
+        "deployment_id": "dep000099",
+        "name": "Prickly Pear",
+        "deployment_key": "Prickly Pear",
+        "status": "active",
+        "image_count": "387247",
+        "description": ""
+    },
+    {
+        "country": "Anguilla",
+        "deployment_id": "dep000100",
+        "name": "Sombrero",
+        "deployment_key": "Sombrero",
+        "status": "active",
+        "image_count": "333543",
+        "description": ""
+    },
+    {
+        "country": "Anguilla",
+        "deployment_id": "dep000101",
+        "name": "Dog",
+        "deployment_key": "Dog",
+        "status": "active",
+        "image_count": "272058",
+        "description": ""
+    },
+    {
+        "country": "Anguilla",
+        "deployment_id": "dep000098",
+        "name": "Fountain",
+        "deployment_key": "Fountain",
+        "status": "active",
+        "image_count": "603782",
+        "description": ""
     }
+
 ]

@@ -195,7 +195,9 @@ fetch('points_of_interest.json')
       'Costa Rica': [9.7, -84.0],
       'Panama': [9.0, -79.5],
       'Japan': [36.0, 138.0],
-      'Namibia': [-22.0, 17.0]
+      'Namibia': [-22.0, 17.0],
+      'Anguilla': [18.22, -63.05],
+      'Nigeria': [9.08, 8.68]
     };
 
     // Create markers for each country
