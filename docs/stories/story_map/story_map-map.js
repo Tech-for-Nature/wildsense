@@ -159,7 +159,10 @@ const countryCoordinates = {
   'Singapore': [1.3521, 103.8198],
   'Namibia': [-22.9576, 18.4904],
   'Japan': [36.2048, 138.2529],
-  'United Kingdom': [55.3781, -3.4360]
+  'United Kingdom': [55.3781, -3.4360],
+  'Panama': [8.5, -80.0],
+  'Anguilla': [18.22, -63.05],
+  'Nigeria': [9.08, 8.68]
 };
 
 // Fetch and process the points of interest data

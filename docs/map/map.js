@@ -188,14 +188,14 @@ fetch('points_of_interest.json')
 
     // Define country coordinates (approximate centers)
     const countryCoordinates = {
-      'United Kingdom': [54.5, -2.5],
-      'Singapore': [1.35, 103.8],
-      'Kenya': [-1.0, 37.0],
-      'Thailand': [13.7, 100.5],
-      'Costa Rica': [9.7, -84.0],
-      'Panama': [9.0, -79.5],
-      'Japan': [36.0, 138.0],
-      'Namibia': [-22.0, 17.0],
+      'Costa Rica': [9.7489, -83.7534],
+      'Kenya': [0.0236, 37.9062],
+      'Thailand': [15.8700, 100.9925],
+      'Singapore': [1.3521, 103.8198],
+      'Namibia': [-22.9576, 18.4904],
+      'Japan': [36.2048, 138.2529],
+      'United Kingdom': [55.3781, -3.4360],
+      'Panama': [8.5, -80.0],
       'Anguilla': [18.22, -63.05],
       'Nigeria': [9.08, 8.68]
     };
