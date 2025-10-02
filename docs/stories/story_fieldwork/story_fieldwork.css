@@ -140,21 +140,29 @@ body.fieldwork-page {
   margin-bottom: 0;
 }
 
-.carousel-indicators button {
-  background-color: #dc3545;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 6px;
-  opacity: 0.4;
-  border: 2px solid #450f14;
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(235, 190, 190, 1) !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  margin: 0 6px !important;
+  opacity: 0.5 !important;
+  border: 1px solid rgb(226, 141, 141) !important;
+  transition: all 0.3s ease !important;
+  box-sizing: border-box !important;
+  vertical-align: middle !important;
 }
 
-.carousel-indicators button.active {
-  opacity: 1;
-  transform: scale(1.3);
-  background-color: rgba(91, 21, 28, 0.8);
-  border-color: rgba(91, 21, 28, 0.8);
+.carousel-indicators [data-bs-target].active {
+  opacity: 1 !important;
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50% !important;
+  background-color: rgba(91, 21, 28, 0.8) !important;
+  border: 2px solid rgba(91, 21, 28, 0.8) !important;
+  box-sizing: border-box !important;
+  vertical-align: middle !important;
+  margin: -4px 6px 0 6px !important;
 }
 
 /* Video Navigation Items */
