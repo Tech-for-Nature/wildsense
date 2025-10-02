@@ -3,26 +3,442 @@ title: Big Beautiful Data
 layout: amber
 ---
 
+<!-- HERO -->
+<header class="hero text-center">
+  <div class="container">
+    <h1 class="display-5 mb-3">Big Beautiful Data</h1>
+    <h5>
+      Explore the vast amounts of data collected by the AMBER project across the globe.
+    </h5>
+  </div>
+</header>
 
+<!-- Main Content -->
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
 
-
-  <!-- HERO -->
-  <header class="hero text-center">
-    <div class="container">
-      <h1 class="display-5 mb-3">Big Beautiful Data</h1>
-      <h5>
-        This page will be populated soon and will show the vast amounts of data collected by the AMBER project.
-      </h5>
-    </div>
-  </header>
-
-      <!-- Back to Stories & Next Story -->
-      <div class="text-center mt-5 mb-4">
-        <a href="../stories.html" class="btn btn-outline-primary btn-lg me-3">
-          &#8592; Back to All Stories
-        </a>
-        <a href="../story_fieldwork/story_fieldwork.html" class="btn btn-primary btn-lg">
-          Fieldwork Diaries &#8594;
-        </a>
+      <!-- Introduction Text -->
+      <div class="mb-5">
+        <h2 class="mb-4">The Scale Behind the Scenes</h2>
+        <p class="lead">
+          Behind every ecological insight our system delivers lies massive volumes of data, flowing in from open-source images used to train our models, to the camera traps deployed across different environments.
+        </p>
+        <p>
+          Before training a machine learning model, we sift through online resources, GBIF, to curate a set of training images which we can build our models on. The dataset is very large with thousands of informative images selected to teach the models about the intricacies of each species.
+        </p>
+        <p>
+          Additionally, over the course of the project so far, AMBER has amassed tens of millions of frames, each one a tiny window into an ecosystem. Not only this, but also audio and ultrasound data.
+        </p>
       </div>
+
+      <!-- Training Data Section -->
+       <div class="mb-5">
+        <h2 class="mb-4">Training with image armies</h2>
+        <p>
+          To train our models, we feed them data at scale. Each image, whether a near-identical pair or a completely novel angle, contributes to model robustness. Over time, the system becomes less brittle: better at recognizing individual moth species from one another.
+        </p>
+        <h3>GBIF training data</h3>
+        <p>
+          We draw on <a href="https://www.gbif.org/">GBIF</a> datasets to enrich training. In total ___ images were downloaded for training across all our models.
+        </p>
+        <p>
+          Ideally, we aim to have 1000 images for each species, however in less well explored regions, such as Costa Rica, this is often not possible. This highlights where biodiversity records are strong, and where data gaps still exist.
+        </p>
+
+        <p>
+          This is highlighted in the bar chart below, where for each country, we show the number of species with:
+        <ul>
+          <li>0 images</li>
+          <li>&lt;100 images</li>
+          <li>&lt;1000 images</li>
+          <li>1000+ images available on GBIF.</li>
+        </ul>
+        </p>
+
+      </div>
+
+      <!-- GBIF Training Data Visualization -->
+      <div class="mb-5">
+        <div class="placeholder-chart text-center">
+          <div class="placeholder-rectangle">
+            <span class="placeholder-text">GBIF Training Data Chart<br><small>Coming Soon</small></span>
+          </div>
+          <p class="text-muted mt-3">
+            Distribution of available training images per species across different countries, showing data availability from 0 images to 1000+ images per species.
+          </p>
+        </div>
+      </div>
+
+      <!-- Deployment Images -->
+      <div class="mb-5">
+        <h3 class="mb-4">Deployment Images</h3>
+        <p>
+          To understand the scale, we can look at our deployments and the number of images they have captured:
+        </p>
+
+        <!-- Toggle Buttons -->
+        <div class="text-center mb-4">
+          <div class="btn-group" role="group" aria-label="Chart toggle">
+            <button type="button" class="btn btn-amber-red active" id="btn-dates" onclick="showChart('dates')">
+              Recording Dates
+            </button>
+            <button type="button" class="btn btn-outline-amber-red" id="btn-hours" onclick="showChart('hours')">
+              Recording Hours
+            </button>
+          </div>
+        </div>
+
+        <!-- Chart Container -->
+        <div class="chart-container position-relative">
+          <!-- Dates Chart -->
+          <div id="chart-dates" class="chart-item active">
+            <img src="figs/images_recording_dates.png" alt="Images Recording Dates" class="img-fluid rounded shadow">
+            <p class="text-muted mt-3 text-center">
+              Distribution of image recordings across different countries and the number of recording dates.
+            </p>
+          </div>
+
+          <!-- Hours Chart -->
+          <div id="chart-hours" class="chart-item">
+            <img src="figs/images_recording_hours.png" alt="Images Recording Hours" class="img-fluid rounded shadow">
+            <p class="text-muted mt-3 text-center">
+              Distribution of image recordings across different countries and the number of recording hours.
+            </p>
+          </div>
+        </div>
+      <p>
+        This figure shows the number of images captured per deployment country, with the number of recording dates and hours (toggle). Singapore and Costa Rica have captured the most, as they were among the first devices to be deployed. We can take a closer look at the number of images per deployment, below.
+      </p>
+      <div class="chart-container">
+        <img src="figs/images_per_dep.png" alt="Images per Deployment" class="img-fluid rounded shadow">
+        <p class="text-muted mt-3 text-center">
+          Number of images captured per deployment location, highlighting the variation in data volume across different sites.
+        </p>
+      </div>
+    </div>
+
+
+      <!-- Audio Data Toggle -->
+      <div class="mb-4">
+        <h4 class="mb-3">Audio Data Collection</h4>
+        <p>
+        However, some of our systems also capture audio and ultrasound data. These recordings will help us detect birds and bats in the future, complementing the visual data.
+      </p>
+
+        <!-- Audio Toggle Buttons -->
+        <div class="text-center mb-4">
+          <div class="btn-group" role="group" aria-label="Audio chart toggle">
+            <button type="button" class="btn btn-amber-red active" id="btn-audible" onclick="showAudioChart('audible')">
+              Audible Files
+            </button>
+            <button type="button" class="btn btn-outline-amber-red" id="btn-ultrasound" onclick="showAudioChart('ultrasound')">
+              Ultrasound Files
+            </button>
+          </div>
+        </div>
+
+        <!-- Audio Chart Container -->
+        <div class="audio-chart-container position-relative">
+          <!-- Audible Chart -->
+          <div id="audio-chart-audible" class="audio-chart-item active">
+            <img src="figs/audible.png" alt="Audible File Counts" class="img-fluid rounded shadow">
+            <p class="text-muted mt-3 text-center">
+              Distribution of audible audio recordings across different deployment locations, capturing bird songs and other wildlife sounds.
+            </p>
+          </div>
+
+          <!-- Ultrasound Chart -->
+          <div id="audio-chart-ultrasound" class="audio-chart-item">
+            <img src="figs/ultrasound.png" alt="Ultrasound File Counts" class="img-fluid rounded shadow">
+            <p class="text-muted mt-3 text-center">
+              Distribution of ultrasound recordings across different deployment locations, capturing bat echolocation calls and high-frequency sounds.
+            </p>
+          </div>
+        </div>
+
+      <p>
+        Together, these views show where data is richest, where deployments were deployed longest, and how different sensor types contribute to the bigger picture.
+      </p>
+      </div>
+
+      <!-- Infrastructure -->
+      <div class="mb-5">
+        <h3 class="mb-4">Infrastructure to match ambition</h3>
+        <p>
+          Processing this scale of imagery demands serious infrastructure:
+          <ul>
+            <li>High performance compute clusters with GPUs to train deep neural nets and perform inferences</li>
+            <li>Distributed data storage (object stores, S3 style buckets) to hold petabytes of image data</li>
+            <li>Efficient pipelines to stream batches, manage metadata, and track individuals</li>
+            <li>Automated validation to flag anomalies such as sudden shifts in brightness, unusual class distributions, or corrupted batches</li>
+          </ul>
+          Every model version links back to the exact image subsets, augmentation settings, and hyperparameters used, ensuring reproducibility.
+        </p>
+      </div>
+
+      <!-- Inferences -->
+      <div class="mb-5">
+        <h3 class="mb-4">Inferences</h3>
+        <p>
+          The real impact is seen when images are processed through trained models. As of October 2025, more than 6 million images have been processed, and this number grows daily as deployments continue.
+        </p>
+
+
+      <div class="chart-container">
+        <img src="figs/images_per_dep.png" alt="Images per Deployment" class="img-fluid rounded shadow">
+        <p class="text-muted mt-3 text-center">
+          Number of images captured per deployment location, highlighting the variation in data volume across different sites.
+        </p>
+      </div>
+
+      <p>
+        We can take this a step further and look at the number of crops (objects) and moths detected across these images:
+      </p>
+
+      <!-- Crop Toggle Buttons -->
+        <div class="text-center mb-4">
+          <div class="btn-group" role="group" aria-label="Crop chart toggle">
+            <button type="button" class="btn btn-amber-red active" id="btn-crops" onclick="showCropChart('crops')">
+              Number of Crops
+            </button>
+            <button type="button" class="btn btn-outline-amber-red" id="btn-moths" onclick="showCropChart('moths')">
+              Number of Moths
+            </button>
+          </div>
+        </div>
+
+        <!-- Audio Chart Container -->
+        <div class="crop-chart-container position-relative">
+          <!-- Crops Chart -->
+          <div id="crop-chart-crops" class="crop-chart-item active">
+            <img src="figs/crops.png" alt="Crops File Counts" class="img-fluid rounded shadow">
+            <p class="text-muted mt-3 text-center">
+              Distribution of crop audio recordings across different deployment locations, capturing various agricultural sounds.
+            </p>
+          </div>
+
+          <!-- Moths Chart -->
+          <div id="crop-chart-moths" class="crop-chart-item">
+            <img src="figs/moths.png" alt="Moths File Counts" class="img-fluid rounded shadow">
+            <p class="text-muted mt-3 text-center">
+              Distribution of moth audio recordings across different deployment locations, capturing various nocturnal sounds.
+            </p>
+          </div>
+        </div>
+    </div>
+
+      <!-- Conclusion -->
+       <div class="mb-5">
+        <h2 class="mb-4">When scale becomes strength</h2>
+        <p>
+          What begins as the challenge of “too much data” becomes a strength. With breadth and depth, our models generalize better across geographies, and species. Subtle ecological patterns emerge, offering the potential to highlight seasonal shifts in behaviour, or flag species of ecological relevance that could guide conservation efforts. This is the promise of big beautiful data: transforming overwhelming complexity into insights that help us understand, protect, and actively support biodiversity into the future.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .chart-container {
+    min-height: 400px;
+  }
+
+  .chart-item {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .chart-item.active {
+    display: block;
+  }
+
+  .chart-item img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .audio-chart-item img,
+  .crop-chart-item img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .chart-container img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .btn-group .btn {
+    min-width: 150px;
+  }
+
+  .placeholder-rectangle {
+    width: 100%;
+    height: 400px;
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .placeholder-text {
+    color: #6c757d;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .placeholder-text small {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #adb5bd;
+  }
+
+  .audio-chart-container {
+    min-height: 400px;
+  }
+
+  .audio-chart-item {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .audio-chart-item.active {
+    display: block;
+  }
+
+  .crop-chart-container {
+    min-height: 400px;
+  }
+
+  .crop-chart-item {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .crop-chart-item.active {
+    display: block;
+  }
+
+  /* Custom red buttons to match website theme */
+  .btn-amber-red {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+  }
+
+  .btn-amber-red:hover,
+  .btn-amber-red:focus {
+    background-color: #c82333;
+    border-color: #bd2130;
+    color: white;
+  }
+
+  .btn-outline-amber-red {
+    background-color: transparent;
+    border-color: #dc3545;
+    color: #dc3545;
+  }
+
+  .btn-outline-amber-red:hover,
+  .btn-outline-amber-red:focus {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+  }
+
+  .btn-amber-red.active,
+  .btn-outline-amber-red.active {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+  }
+</style>
+
+<script>
+  function showChart(chartType) {
+    // Hide all charts
+    document.querySelectorAll('.chart-item').forEach(item => {
+      item.classList.remove('active');
+    });
+
+    // Remove active class from image chart buttons
+    document.querySelectorAll('#btn-dates, #btn-hours').forEach(btn => {
+      btn.classList.remove('btn-amber-red', 'active');
+      btn.classList.add('btn-outline-amber-red');
+    });
+
+    // Show selected chart
+    document.getElementById('chart-' + chartType).classList.add('active');
+
+    // Update button state
+    const activeBtn = document.getElementById('btn-' + chartType);
+    activeBtn.classList.remove('btn-outline-amber-red');
+    activeBtn.classList.add('btn-amber-red', 'active');
+  }
+
+  function showAudioChart(chartType) {
+    // Hide all audio charts
+    document.querySelectorAll('.audio-chart-item').forEach(item => {
+      item.classList.remove('active');
+    });
+
+    // Remove active class from audio buttons
+    document.querySelectorAll('#btn-audible, #btn-ultrasound').forEach(btn => {
+      btn.classList.remove('btn-amber-red', 'active');
+      btn.classList.add('btn-outline-amber-red');
+    });
+
+    // Show selected audio chart
+    document.getElementById('audio-chart-' + chartType).classList.add('active');
+
+    // Update button state
+    const activeBtn = document.getElementById('btn-' + chartType);
+    activeBtn.classList.remove('btn-outline-amber-red');
+    activeBtn.classList.add('btn-amber-red', 'active');
+  }
+
+  function showCropChart(chartType) {
+    // Hide all crop charts
+    document.querySelectorAll('.crop-chart-item').forEach(item => {
+      item.classList.remove('active');
+    });
+
+    // Remove active class from crop buttons
+    document.querySelectorAll('#btn-crops, #btn-moths').forEach(btn => {
+      btn.classList.remove('btn-amber-red', 'active');
+      btn.classList.add('btn-outline-amber-red');
+    });
+
+    // Show selected crop chart
+    document.getElementById('crop-chart-' + chartType).classList.add('active');
+
+    // Update button state
+    const activeBtn = document.getElementById('btn-' + chartType);
+    activeBtn.classList.remove('btn-outline-amber-red');
+    activeBtn.classList.add('btn-amber-red', 'active');
+  }
+</script>
+
+<!-- Back to Stories & Next Story -->
+<div class="text-center mt-5 mb-4">
+  <a href="../stories.html" class="btn btn-outline-primary btn-lg me-3">
+    &#8592; Back to All Stories
+  </a>
+  <a href="../story_fieldwork/story_fieldwork.html" class="btn btn-primary btn-lg">
+    Fieldwork Diaries &#8594;
+  </a>
+</div>
 
