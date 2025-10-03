@@ -37,16 +37,19 @@ layout: amber
             </p>
           </div>
         </div>
+        <p>
+          Currently, our pipeline is designed so that deployment partners upload their image and audio data directly into our object store.
+          From there, the data enters processing and curation workflows, ensuring it is ready for large-scale analysis, and machine learning inferencing.
+          Over the course of the project so far, AMBER has amassed tens of millions of frames, each one a tiny window into an ecosystem.
+          Not only this, but also audio and ultrasound data.
+        </p>
 
         <p>
-          Before training a machine learning model, we sift through online resources,
+          Additionally, before training each machine learning model, we sift through an online resource,
           <a href="https://www.gbif.org/">GBIF</a>, to curate a set of training images which we can build our models on.
           The dataset is very large with thousands of informative images selected to teach the models about the intricacies of each species.
         </p>
-        <p>
-          Additionally, over the course of the project so far, AMBER has amassed tens of millions of frames, each one a tiny window into an ecosystem.
-          Not only this, but also audio and ultrasound data.
-        </p>
+
       </div>
 
       <!-- Training Data Section -->
@@ -55,7 +58,7 @@ layout: amber
         <p>
           Our models learn at scale.
           Each image, whether nearly identical to another or completely novel, helps improve robustness.
-          Over time, the system becomes less brittle: better at recognizing individual moth species from one another.
+          Over time, the system becomes less brittle: better at recognising individual moth species from one another.
         </p>
         <p>
           We draw on <a href="https://www.gbif.org/">GBIF</a> datasets to enrich training.
@@ -63,8 +66,8 @@ layout: amber
           However, in less well documented regions, such as Costa Rica, this target is often out of reach as not enough images have been recorded.
           These differences reveal where biodiversity records are strong and where important gaps remain.
         </p>
-        <p>
-          In total ___ images were downloaded for training across all our models, built for each deployment country.
+        <!-- <p>
+          In total ?? images were downloaded for training across all our models, built for each deployment country.
           The bar chart below illustrates this variation, showing for each country the number of species with:
         </p>
         <ul>
@@ -73,8 +76,10 @@ layout: amber
           <li>&lt;1000 images</li>
           <li>1000+ images available on GBIF.</li>
         </ul>
+        -->
 
         <!-- GBIF Training Data Visualization -->
+        <!--
         <div class="mb-5">
           <div class="placeholder-chart text-center">
             <div class="placeholder-rectangle">
@@ -85,13 +90,13 @@ layout: amber
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Deployment Images -->
       <div class="mb-5">
         <h3 class="mb-4">Deployment Data</h3>
         <p>
-          Images from the AMI deployments reveal the vast scale of data captured through field deployments:
+          Images from the AMI deployments reveal the vast scale of data we are capturing ourselves through field deployments:
         </p>
 
         <!-- Toggle Buttons -->
