@@ -1,3 +1,4 @@
 .DS_Store
 docs/stories/story_ml/*_large.gif
 docs/stories/story_encounters/*/*.gif
+.vscode/settings.json
