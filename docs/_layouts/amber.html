@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{ page.title | default: site.title }}</title>
+  <!-- Favicon: place your favicon.ico at the site root (docs/favicon.ico) or update the path below -->
+  <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css"/>
   {% if page.css %}
