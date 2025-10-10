@@ -209,47 +209,48 @@ layout: amber
       <div class="mb-5">
         <h2 class="mb-4">Inferences</h2>
         <p>
-          The real impact is seen when images are processed through trained models. As of October 2025, more than 6 million images have been processed, and this number grows daily as deployments continue.
+          The real impact is seen when images are processed through trained models. As of October 2025, almost 7 million images have been processed, and this number grows daily as deployments continue.
         </p>
 
         <div class="chart-container">
-          <img src="figs/images_per_dep.png" alt="Images per Deployment" class="img-fluid rounded shadow">
+          <img src="figs/images_processed.png" alt="Images per Deployment" class="img-fluid rounded shadow">
           <p class="text-muted mt-3 text-center">
-            Number of images captured per deployment location, highlighting the variation in data volume across different sites.
+            Number of images processed per deployment location, highlighting the variation in data volume across different sites.
           </p>
         </div>
 
         <p>
-          We can take this a step further and look at the number of crops (objects) and moths detected across these images:
+          We can take this a step further and look at the number of moths and crops (objects) detected across these images:
         </p>
 
         <!-- Crop Toggle Buttons -->
         <div class="text-center mb-4">
           <div class="btn-group" role="group" aria-label="Crop chart toggle">
-            <button type="button" class="btn btn-amber-red active" id="btn-crops" onclick="showCropChart('crops')">
-              Number of Crops
-            </button>
-            <button type="button" class="btn btn-outline-amber-red" id="btn-moths" onclick="showCropChart('moths')">
+            <button type="button" class="btn btn-outline-amber-red active" id="btn-moths" onclick="showCropChart('moths')">
               Number of Moths
             </button>
+            <button type="button" class="btn btn-outline-amber-red" id="btn-crops" onclick="showCropChart('crops')">
+              Number of Crops
+            </button>
+
           </div>
         </div>
 
         <!-- Crop Chart Container -->
         <div class="crop-chart-container position-relative">
+                    <!-- Moths Chart -->
+          <div id="crop-chart-moths" class="crop-chart-item">
+            <img src="figs/moths.png" alt="Moths File Counts" class="img-fluid rounded shadow">
+            <p class="text-muted mt-3 text-center">
+              Distribution of moth audio recordings across different deployment locations, capturing various nocturnal sounds.
+            </p>
+          </div>
+
           <!-- Crops Chart -->
           <div id="crop-chart-crops" class="crop-chart-item active">
             <img src="figs/crops.png" alt="Crops File Counts" class="img-fluid rounded shadow">
             <p class="text-muted mt-3 text-center">
               Distribution of crop audio recordings across different deployment locations, capturing various agricultural sounds.
-            </p>
-          </div>
-
-          <!-- Moths Chart -->
-          <div id="crop-chart-moths" class="crop-chart-item">
-            <img src="figs/moths.png" alt="Moths File Counts" class="img-fluid rounded shadow">
-            <p class="text-muted mt-3 text-center">
-              Distribution of moth audio recordings across different deployment locations, capturing various nocturnal sounds.
             </p>
           </div>
         </div>
