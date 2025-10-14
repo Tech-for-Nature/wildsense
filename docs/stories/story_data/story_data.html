@@ -62,12 +62,14 @@ layout: amber
         </p>
         <p>
           We draw on <a href="https://www.gbif.org/">GBIF</a> datasets to enrich training.
+          For each deployment country, we compile an expert-curated list of species known to occur there,
+          then download all available images from GBIF for those species.
           Ideally, we aim for around 1000 images per species to ensure reliable training.
           However, in less well documented regions, such as Costa Rica, this target is often out of reach as not enough images have been recorded.
           These differences reveal where biodiversity records are strong and where important gaps remain.
         </p>
-        <!-- <p>
-          In total ?? images were downloaded for training across all our models, built for each deployment country.
+        <p>
+          In total, almost 2 million images were downloaded for training across all our models, built for each deployment country.
           The bar chart below illustrates this variation, showing for each country the number of species with:
         </p>
         <ul>
@@ -76,21 +78,22 @@ layout: amber
           <li>&lt;1000 images</li>
           <li>1000+ images available on GBIF.</li>
         </ul>
-        -->
 
         <!-- GBIF Training Data Visualization -->
-        <!--
         <div class="mb-5">
-          <div class="placeholder-chart text-center">
-            <div class="placeholder-rectangle">
-              <span class="placeholder-text">GBIF Training Data Chart<br><small>Coming Soon</small></span>
-            </div>
-            <p class="text-muted mt-3">
-              Distribution of available training images per species across different countries, showing data availability from 0 images to 1000+ images per species.
-            </p>
-          </div>
+          <img src="figs/gbif_images.png" alt="stacked bar chart of GBIF species counts across all regions" class="img-fluid rounded shadow">
+          <p class="text-muted mt-3">
+            Distribution of available training images per species across different countries, showing data availability from 0 images to 1000+ images per species.
+          </p>
         </div>
-      </div> -->
+        <p>
+          This chart highlights the disparities in data availability across regions.
+          Countries like the UK and Singapore have broad coverage of images for most species,
+          whereas Costa Rica and Madagascar have many species with no images available.
+          This reflects the extent of citizen science contributions in each region,
+          and how difficult it is to develop models which can differentiate between species with little to no data.
+        </p>
+      </div>
 
       <!-- Deployment Images -->
       <div class="mb-5">
