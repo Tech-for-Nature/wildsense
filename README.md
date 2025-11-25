@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AMBER Dashboard
 
 Dashboard for AMBER project currently hosted [here](https://ami-system.github.io/amber-dashboard/).
@@ -33,3 +34,7 @@ If you are loading in large videos, images or gifs, we recommend you source them
 The AMBER Dashboard uses Google Analytics 4 for tracking user interactions. The tracking code is included in the `<head>` section of each HTML file (sourced from `google_analytics.html`).
 
 To view the metrics, you will need access to the Google Analytics account associated with the AMBER project. Contact Kat, Tom or David.
+=======
+# tech_team_dashboard
+Generalised dashboard for AMI – Automatic Monitoring of Insects
+>>>>>>> 0e258ba3d8d5e744eb15690665f3f94410f8dadf
