@@ -1,288 +1,369 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-title: AMBER
-layout: amber
+layout: default
+title: "WildSense – Automated Biodiversity Monitoring"
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AMBER</title>
+<main class="wildsense-home">
 
-  <style>
-    .story-carousel-card {
-      width: 320px !important;
-      min-width: 320px !important;
-      max-width: 320px !important;
-      height: 280px !important;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      margin-right: 1rem;
-      overflow: hidden;
-    }
-    .story-carousel-img {
-      width: 100% !important;
-      height: 140px !important;
-      object-fit: cover;
-      display: block;
-    }
-    .story-carousel-content {
-      font-size: 0.8rem;
-      padding: 0.3rem 0.4rem 0 0.4rem;
-      text-align: left;
-    }
-    @media (max-width: 600px) {
-      .story-carousel-card {
-        width: 280px !important;
-        min-width: 280px !important;
-        max-width: 280px !important;
-        height: 300px !important;
-      }
-      .story-carousel-img {
-        height: 120px !important;
-      }
-    }
-    .landing-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0;
-    }
-    .landing-container .video-col, .landing-container .text-col {
-      flex: 1 1 50%;
-      min-width: 320px;
-      box-sizing: border-box;
-    }
-    .landing-container .video-col {
-      padding-right: 2rem;
-    }
-    .landing-container .text-col {
-      padding-left: 2rem;
-    }
-    .landing-container .video-col {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .landing-container img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-    @media (max-width: 900px) {
-      .landing-container {
-        flex-direction: column;
-      }
-      .landing-container .video-col, .landing-container .text-col {
-        flex: 1 1 100%;
-        max-width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-      }
-      .landing-container .text-col {
-        text-align: center;
-        padding-top: 1.5rem;
-      }
-    }
-    .carousel-container {
-      max-width: 90%;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-    @media (max-width: 768px) {
-      .carousel-container {
-        max-width: 95%;
-        padding: 0 1rem;
-      }
-    }
-  </style>
-
-</head>
-<body>
-
-<!-- Navbar -->
-<!-- Navbar (static for GitHub Pages) -->
-
-
-<!-- Main Content -->
-<div class="container text-center mt-4">
-  <h1 style="padding-bottom: 0px;">Welcome to AMBER</h1>
-  <h5 class="mb-3" style="color: #6c757d; padding-top: 0px;">
-    Automated Monitoring of Biodiversity with Edge Processing and Remote Sensing.
-  </h5>
-
-  <!-- Landing Container with Bootstrap Grid -->
-  <div class="landing-container bg-light p-4 rounded shadow-sm">
-    <div class="video-col">
-      <img src="stories/story_ml/ami-system.gif"
-           alt="AMI system deployed in the field"
-           class="img-fluid rounded" />
+  <!-- Hero -->
+  <section class="py-5 py-lg-6">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <p class="text-uppercase small text-muted mb-2">
+            Automated biodiversity monitoring
+          </p>
+          <h1 class="display-5 fw-bold mb-3">
+            Automating wildlife insights around the world
+          </h1>
+          <p class="lead mb-4">
+            WildSense brings together innovative sensor networks, machine learning, and collaborative science
+            to understand and protect biodiversity at scale. From moth imaging systems to acoustic recorders
+            and pollinator sensors, we help transform raw observations into meaningful ecological insights.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="{{ site.baseurl }}/systems/ami/" class="btn btn-success btn-lg">
+              Explore our systems
+            </a>
+            <a href="{{ site.baseurl }}/projects/current/" class="btn btn-outline-secondary btn-lg">
+              View current projects
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <!-- Placeholder for hero image / illustration -->
+          <div class="ratio ratio-4x3 rounded-4 border bg-light d-flex align-items-center justify-content-center">
+            <span class="text-muted small text-center px-3">
+              Hero image placeholder<br>
+              (e.g. circuitry moth + dark forest aerial)
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="text-col">
-      <p class="mb-0">
-        AMBER is a cutting-edge collaboration between UKCEH and The Alan Turing Institute,
-        sponsored by the Aberdeen Group Charitable Foundation. It explores wildlife conservation
-        through AI-powered camera trap networks. Our intelligent monitoring systems are deployed
-        worldwide, from the rainforests of Costa Rica to the deserts of Namibia, providing
-        unprecedented insights into ecosystem health and wildlife behavior patterns.
-      </p>
+  </section>
+
+  <!-- Systems overview -->
+  <section id="systems" class="py-5 border-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-3">
+        <div>
+          <h2 class="h3 fw-bold mb-1">Monitoring systems</h2>
+          <p class="mb-0 text-muted">
+            A modular toolkit of sensors and workflows for imaging, sound, soil and environmental data.
+          </p>
+        </div>
+        <a href="{{ site.baseurl }}/systems/" class="text-decoration-none">
+          View all systems →
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- AMI -->
+        <div class="col-md-6 col-lg-4">
+          <a href="{{ site.baseurl }}/systems/ami/" class="text-decoration-none text-reset d-block h-100">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <div class="card-body">
+                <h3 class="h5 fw-bold">AMI</h3>
+                <p class="small text-muted mb-2">Automated Monitoring of Insects</p>
+                <p class="mb-0">
+                  High-resolution imaging traps for large-scale nocturnal insect monitoring across global ecosystems.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- LepiSense -->
+        <div class="col-md-6 col-lg-4">
+          <a href="{{ site.baseurl }}/systems/lepisense/" class="text-decoration-none text-reset d-block h-100">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <div class="card-body">
+                <h3 class="h5 fw-bold">LepiSense</h3>
+                <p class="small text-muted mb-2">Mini-imaging for Lepidoptera</p>
+                <p class="mb-0">
+                  Lightweight, field-ready imaging units for moth and butterfly monitoring in pilots, trials and
+                  resource-limited settings.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Acoustics -->
+        <div class="col-md-6 col-lg-4">
+          <a href="{{ site.baseurl }}/systems/acoustics/" class="text-decoration-none text-reset d-block h-100">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <div class="card-body">
+                <h3 class="h5 fw-bold">Acoustic monitoring</h3>
+                <p class="small text-muted mb-2">Soundscape &amp; bird communities</p>
+                <p class="mb-0">
+                  Passive acoustic monitoring using devices such as AudioMoth to track birds, amphibians and
+                  soundscape change over time.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Ultrasonic -->
+        <div class="col-md-6 col-lg-4">
+          <a href="{{ site.baseurl }}/systems/ultrasonic/" class="text-decoration-none text-reset d-block h-100">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <div class="card-body">
+                <h3 class="h5 fw-bold">Ultrasonic monitoring</h3>
+                <p class="small text-muted mb-2">Bat activity &amp; high-frequency calls</p>
+                <p class="mb-0">
+                  High-frequency recorders and call classification pipelines, including BTO workflows, for
+                  bat activity and guild-level indicators.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Other technologies -->
+        <div class="col-md-6 col-lg-4">
+          <a href="{{ site.baseurl }}/systems/other_technology/" class="text-decoration-none text-reset d-block h-100">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <div class="card-body">
+                <h3 class="h5 fw-bold">Other monitoring technologies</h3>
+                <p class="small text-muted mb-2">Soil, pollinators &amp; environment</p>
+                <p class="mb-0">
+                  Supporting methods including soil biodiversity, pollinator sensors and environmental
+                  monitoring that enrich multi-modal datasets.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
     </div>
-  </div>
+  </section>
 
+  <!-- Spotlight project -->
+  <section class="py-5 border-top">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="h3 fw-bold mb-2">Spotlight: Tracking Anguilla’s migratory insects</h2>
+          <p class="text-muted mb-3">
+            In Anguilla, our teams are deploying AMI traps, acoustic recorders and environmental sensors to
+            understand how migratory insects move across coastal and inland habitats.
+          </p>
+          <p class="mb-4">
+            These data support local partners and decision-makers, helping them design conservation actions that
+            work for both biodiversity and communities.
+          </p>
+          <a href="{{ site.baseurl }}/projects/anguilla/" class="btn btn-outline-success">
+            View project
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <!-- Placeholder for Anguilla image -->
+          <div class="ratio ratio-16x9 rounded-4 border bg-light d-flex align-items-center justify-content-center">
+            <span class="text-muted small text-center px-3">
+              Anguilla project image placeholder<br>
+              (e.g. field team, coastline, or AMI trap in situ)
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-  </div>
-  <div class="mb-3 d-flex justify-content-center" style="padding-top: 25px;">
-    <a href="stories/story_map/story_map.html" class="btn btn-primary btn-sm me-2">Explore Deployments</a>
-    <a href="stories/stories.html" class="btn btn-outline-primary btn-sm me-2">Read Stories</a>
-    <a href="about/about.html" class="btn btn-outline-primary btn-sm">About AMBER</a>
-    <a href="about/about.html#deployment-partners" class="btn btn-outline-primary btn-sm">Deployment Partners</a>
-  </div>
-
-
-  <!-- Stories Carousel Section -->
-  <div class="stories-section mt-3">
-    <h2 class="text-center mb-3">Featured Stories</h2>
-    <div class="carousel-container">
-      <div id="storiesCarousel" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="stories-viewport overflow-hidden" id="carouselViewport">
-            <div class="stories-row d-flex flex-nowrap" id="storiesRow">
-
-
-              <!-- ML story -->
-              <a href="stories/story_ml/story_ml.html" class="story-carousel-card text-decoration-none">
-                <img src="stories/story_ml/ml_snapshot.jpg" class="story-carousel-img" alt="Machine Learning Analysis" />
-                <div class="story-carousel-content">
-                  <h3>Unlocking Biodiversity Insights with AI</h3>
-                  <p>Discover how machine learning is transforming biodiversity research through AMBER.</p>
-                </div>
-              </a>
-
-              <!-- Deployment Map -->
-              <a href="stories/story_map/story_map.html" class="story-carousel-card text-decoration-none">
-                <img src="stories/story_map/story_map.jpg" class="story-carousel-img" alt="Global Deployment Map" />
-                <div class="story-carousel-content">
-                  <h3>Global AMBER Deployment Network</h3>
-                  <p>Explore our worldwide network of AI-powered camera trap deployments across six continents.</p>
-                </div>
-              </a>
-
-              <!-- Wildlife Encounters -->
-              <a href="stories/story_encounters/story_encounters.html" class="story-carousel-card text-decoration-none">
-                <img src="stories/story_encounters/civet_cat.jpg" class="story-carousel-img" alt="Wildlife Encounters" />
-                <div class="story-carousel-content">
-                  <h3>Wildlife Encounters</h3>
-                  <p>The systems captured more than just moths. From nocturnal predators to other creepy crawlies, discover incredible wildlife diversity.</p>
-                </div>
-              </a>
-
-              <!-- Big moths -->
-              <a href="stories/story_big/story_big.html" class="story-carousel-card text-decoration-none">
-                <img src="stories/story_big/story_big.png" class="story-carousel-img" alt="Big Beautiful Moths" />
-                <div class="story-carousel-content">
-                  <h3>Big Beautiful Moths</h3>
-                  <p>Meet some of our largest and most impressive moths captured on the cameras.</p>
-                </div>
-              </a>
-
-              <a href="stories/story_data/story_data.html" class="story-carousel-card text-decoration-none">
-                <img src="stories/story_data/story_data.png" class="story-carousel-img" alt="Big Beautiful Data" style="width:100%; height:100%; object-fit:cover; aspect-ratio:8/9; display:block;" />
-                <div class="story-carousel-content">
-                    <h3>Big Beautiful Data</h3>
-                    <p>Explore the vast amounts of data collected by the AMBER project. </p>
-                </div>
-              </a>
-
-              <!-- Fieldwork diaries -->
-              <a href="stories/story_fieldwork/story_fieldwork.html" class="story-carousel-card text-decoration-none">
-                <!-- <span style="display:block; aspect-ratio: 1/1; overflow:hidden; background:#eee;"> -->
-                  <img src="stories/story_fieldwork/story_fieldwork.jpg" class="story-carousel-img" alt="Fieldwork Diaries" style="width:100%; height:100%; object-fit:cover; aspect-ratio:8/9; display:block;" />
-                <!-- </span> -->
-                <div class="story-carousel-content">
-                  <h3>Fieldwork Diaries</h3>
-                  <p>Join Dr Jenna Lawson behind the scenes of AMBER deployments. She provides stories adn challenges from the field. </p>
-                </div>
-              </a>
-
-              <!-- place for a new story -->
-
-
+  <!-- Stats + deployments -->
+  <section class="py-5 border-top">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="h3 fw-bold mb-2">A growing global network</h2>
+          <p class="mb-0 text-muted">
+            WildSense systems and methods are being tested and deployed across multiple continents, building
+            long-term datasets that can track biodiversity change at local, national and global scales.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row text-center g-4">
+            <div class="col-6 col-md-3">
+              <p class="h3 fw-bold mb-0">40+</p>
+              <p class="small text-muted mb-0">Countries<br>with deployments</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="h3 fw-bold mb-0">200+</p>
+              <p class="small text-muted mb-0">Active<br>monitoring sites</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="h3 fw-bold mb-0">25M</p>
+              <p class="small text-muted mb-0">Images &amp; hours<br>of audio</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="h3 fw-bold mb-0">4+</p>
+              <p class="small text-muted mb-0">Core systems<br>in operation</p>
             </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" onclick="shiftCarousel(-1)">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" onclick="shiftCarousel(1)">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+      <!-- Map placeholder -->
+      <div class="mt-4">
+        <div class="ratio ratio-21x9 rounded-4 border bg-light d-flex align-items-center justify-content-center">
+          <span class="text-muted small text-center px-3">
+            Global deployment map placeholder<br>
+            (e.g. dots for sites, coloured by system)
+          </span>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Fieldwork diaries + wildlife teaser -->
+  <section class="py-5 border-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+        <div>
+          <h2 class="h3 fw-bold mb-1">Fieldwork diaries</h2>
+          <p class="mb-0 text-muted">
+            Stories and snapshots from teams deploying WildSense systems in the field.
+          </p>
+        </div>
+        <a href="{{ site.baseurl }}/wildlife/" class="text-decoration-none">
+          Wildlife showcase →
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Example diary cards as placeholders -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="ratio ratio-4x3 rounded-top-4 bg-light"></div>
+            <div class="card-body">
+              <p class="small text-muted mb-1">Panama</p>
+              <h3 class="h6 fw-bold mb-2">LepiSense rainforest trials</h3>
+              <p class="small mb-0">
+                Testing mini-imaging units under dense canopy and high humidity.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="ratio ratio-4x3 rounded-top-4 bg-light"></div>
+            <div class="card-body">
+              <p class="small text-muted mb-1">Costa Rica</p>
+              <h3 class="h6 fw-bold mb-2">AMBER acoustic campaigns</h3>
+              <p class="small mb-0">
+                Capturing dawn choruses and nocturnal activity across restoration gradients.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="ratio ratio-4x3 rounded-top-4 bg-light"></div>
+            <div class="card-body">
+              <p class="small text-muted mb-1">Kenya</p>
+              <h3 class="h6 fw-bold mb-2">AMI in agricultural landscapes</h3>
+              <p class="small mb-0">
+                Monitoring nocturnal insects alongside farmer-led management trials.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="ratio ratio-4x3 rounded-top-4 bg-light"></div>
+            <div class="card-body">
+              <p class="small text-muted mb-1">United Kingdom</p>
+              <h3 class="h6 fw-bold mb-2">Bat nights and hedgerow surveys</h3>
+              <p class="small mb-0">
+                Ultrasonic monitoring of bat activity along hedgerows and woodland edges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <a href="{{ site.baseurl }}/diaries/" class="btn btn-outline-secondary">
+          Browse all fieldwork diaries
+        </a>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- Carousel JS -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const viewport = document.getElementById('carouselViewport');
-  const row = document.getElementById('storiesRow');
-  const originalCards = Array.from(row.children);
-  const visibleCards = 3;
-  let currentIndex = visibleCards; // Start after prepended clones
+  <!-- Partners strip -->
+  <section class="py-5 border-top">
+    <div class="container">
+      <h2 class="h5 fw-bold text-center mb-4">Partners &amp; collaborators</h2>
+      <p class="text-muted text-center mb-4">
+        WildSense is developed by UK Centre for Ecology &amp; Hydrology with a growing network of research,
+        technology and conservation partners.
+      </p>
 
-  // Clone first and last few cards
-  const cloneStart = originalCards.slice(-visibleCards).map(card => card.cloneNode(true));
-  const cloneEnd = originalCards.slice(0, visibleCards).map(card => card.cloneNode(true));
+      <div class="row g-3 justify-content-center text-center">
+        <!-- Simple logo placeholders; swap with actual images later -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="border rounded-4 py-3 px-2 h-100 d-flex align-items-center justify-content-center small">
+            UKCEH
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="border rounded-4 py-3 px-2 h-100 d-flex align-items-center justify-content-center small">
+            Alan Turing Institute
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="border rounded-4 py-3 px-2 h-100 d-flex align-items-center justify-content-center small">
+            Aarhus University
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="border rounded-4 py-3 px-2 h-100 d-flex align-items-center justify-content-center small">
+            MILA
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="border rounded-4 py-3 px-2 h-100 d-flex align-items-center justify-content-center small">
+            AMBER Initiative
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  // Prepend and append clones
-  cloneStart.forEach(clone => row.insertBefore(clone, row.firstChild));
-  cloneEnd.forEach(clone => row.appendChild(clone));
+  <!-- Contact / CTA -->
+  <section class="py-5 border-top">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <h2 class="h3 fw-bold mb-2">Ready to get started?</h2>
+          <p class="mb-3">
+            Whether you’re designing a new monitoring project, scaling up an existing network, or exploring how
+            automated systems could support your work, we’d love to talk.
+          </p>
+          <p class="mb-4 text-muted">
+            WildSense is built on open science, collaboration and shared tools. Get in touch if you’d like to
+            collaborate, co-design deployments, or explore data and models.
+          </p>
+          <a href="{{ site.baseurl }}/about/#contact" class="btn btn-success btn-lg">
+            Contact us
+          </a>
+        </div>
+        <div class="col-lg-5">
+          <div class="ratio ratio-1x1 rounded-4 border bg-light d-flex align-items-center justify-content-center">
+            <span class="text-muted small text-center px-3">
+              Placeholder for “Tech for Nature” style illustration<br>
+              (e.g. circuitry moth + globe)
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  const allCards = row.children;
-  const card = allCards[0];
-  const cardStyle = getComputedStyle(card);
-  const cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight || 20);
-
-  // Set initial scroll position to the first real card
-  viewport.scrollLeft = cardWidth * currentIndex;
-
-  function shiftCarousel(direction = 1) {
-    currentIndex += direction;
-
-    // Smooth scroll
-    viewport.scrollTo({
-      left: cardWidth * currentIndex,
-      behavior: 'smooth'
-    });
-
-    // Reset scroll position instantly after transition ends (without visible jump)
-    setTimeout(() => {
-      if (currentIndex >= allCards.length - visibleCards) {
-        currentIndex = visibleCards;
-        viewport.scrollLeft = cardWidth * currentIndex;
-      } else if (currentIndex < visibleCards) {
-        currentIndex = allCards.length - (2 * visibleCards);
-        viewport.scrollLeft = cardWidth * currentIndex;
-      }
-    }, 350); // match scroll duration
-  }
-
-  window.shiftCarousel = shiftCarousel;
-  setInterval(() => shiftCarousel(1), 3000);
-});
-</script>
-
-
-
-</body>
-</html>
+</main>

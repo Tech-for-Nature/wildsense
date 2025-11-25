@@ -1,39 +1,84 @@
-<!-- navbar.html: Shared Navbar for AMBER Dashboard -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container-fluid">
-  <a class="navbar-brand" href="{{ site.baseurl }}/index.html">AMBER</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+    <!-- Branding -->
+    <a class="navbar-brand fw-bold" href="{{ site.baseurl }}/">
+      {{ site.title }}
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+
+    <!-- Navbar items -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <!-- Overview -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/index.html">Overview</a>
+        </li>
+
+        <!-- Systems -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="storiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Stories
+          <a class="nav-link dropdown-toggle" href="#" id="systemsDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Systems
           </a>
-          <ul class="dropdown-menu" aria-labelledby="storiesDropdown">
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/stories/story_fieldwork/story_fieldwork.html">Fieldwork Diaries</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/stories/story_encounters/story_encounters.html">Wildlife Encounters</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/stories/story_big/story_big.html">Big Beautiful Moths</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/stories/story_data/story_data.html">Big Beautiful Data</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/stories/story_ml/story_ml.html">Explore AI Technology</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/stories/story_map/story_map.html">Deployment Map</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/stories/stories.html">All Stories Overview</a></li>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="systemsDropdown">
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/systems/ami/">AMI Camera Systems</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/systems/lepisense/">Lepisense</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/systems/acoustics/">Acoustic Monitoring</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/systems/ultrasonic/">Ultrasonic Monitoring</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/systems/other_technology/">Environmental & EO Sensors</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ site.baseurl }}/about/about.html">About</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/AMI-system/amber-dashboard" target="_blank" title="View on GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
+
+        <!-- Projects -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
           </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsDropdown">
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/projects/current/">Current Projects</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/projects/previous/">Previous Projects</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/projects/spotlight/">Project Spotlight</a></li>
+          </ul>
         </li>
+
+        <!-- Fieldwork diaries -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="diariesDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Fieldwork Diaries
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="diariesDropdown">
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/diaries/anguilla/">Anguilla</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/diaries/costa_rica/">Costa Rica</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/diaries/kenya/">Kenya</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/diaries/uk/">United Kingdom</a></li>
+          </ul>
+        </li>
+
+        <!-- Wildlife showcase -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/wildlife/">Wildlife Showcase</a>
+        </li>
+
+        <!-- Partners -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/partners/">Partners</a>
+        </li>
+
+        <!-- About -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/about/">About</a>
+        </li>
+
       </ul>
     </div>
   </div>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- Page title falls back to the site title from _config.yml -->
+  <title>{{ page.title | default: site.title }}</title>
+
+  <!-- Favicon (expects docs/favicon.ico, same as before) -->
+  <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap for quick layout & components -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+
+  <!-- WildSense main stylesheet (we'll create assets/css/main.css later) -->
+  <link rel="stylesheet"
+        href="{{ site.baseurl }}/assets/css/main.css"/>
+
+  <!-- Optional per-page extra CSS files -->
+  {% if page.css %}
+    {% for css_file in page.css %}
+      <link rel="stylesheet" href="{{ site.baseurl }}{{ css_file }}" />
+    {% endfor %}
+  {% endif %}
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Analytics include (we'll re-add this file later from old_docs) -->
+  {% include google_analytics.html %}
+</head>
+<body>
+  <!-- Site-wide navigation (to be created as docs/_includes/navbar.html) -->
+  {% include navbar.html %}
+
+  <!-- Main content area -->
+  <main class="container-fluid py-4">
+    {{ content }}
+  </main>
+
+  <!-- Site-wide footer (to be created as docs/_includes/footer.html) -->
+  {% include footer.html %}
+</body>
+</html>
