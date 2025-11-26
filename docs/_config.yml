@@ -41,7 +41,8 @@ github_username: Tech-for-Nature # org account for now
 collections:
   news:
     output: true
-    permalink: /news/:slug/
+    permalink: /news/:name/
+
 
 # ------------------------------------------------------------------------------
 # Build Settings
