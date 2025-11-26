@@ -1,20 +1,20 @@
 /* ---------------------------------------------------------
    WildSense base theme
-   Dark forest + phthalo green vibes
+   Dark forest + phthalo green vibes (slightly lighter)
 --------------------------------------------------------- */
 
 :root {
-  --ws-bg: #050708;              /* near-black, not pure */
-  --ws-bg-alt: #0b1114;          /* deep forest blue-green */
-  --ws-surface: #10171c;         /* card / panel background */
+  --ws-bg: #05090c;              /* near-black, slightly softened */
+  --ws-bg-alt: #0f191f;          /* deep forest blue-green, lighter */
+  --ws-surface: #131c23;         /* card / panel background */
   --ws-border-subtle: rgba(255, 255, 255, 0.06);
 
   --ws-text: #f5f5f5;
-  --ws-text-muted: #a5b3be;
+  --ws-text-muted: #c0ccd6;      /* a bit brighter for readability */
 
-  --ws-green: #0f9070;           /* phthalo-ish teal green */
-  --ws-green-soft: #35b58a;
-  --ws-green-deep: #0b5b47;
+  --ws-green: #139879;           /* phthalo-ish teal green */
+  --ws-green-soft: #3cc598;
+  --ws-green-deep: #0b5f4a;
 
   --ws-accent: #8be9c4;          /* highlight / focus */
   --ws-warning: #facc6b;
@@ -28,7 +28,7 @@
 --------------------------------------------------------- */
 
 body {
-  background: radial-gradient(circle at top left, #10181e 0%, #050708 55%, #020304 100%);
+  background: radial-gradient(circle at top left, #192832 0%, var(--ws-bg) 55%, #020406 100%);
   color: var(--ws-text);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -44,6 +44,14 @@ a:hover {
   color: var(--ws-green-soft);
 }
 
+/* Slightly stronger paragraph / body text */
+p,
+.card-text,
+.section-body,
+.lead {
+  font-weight: 400; /* override Bootstrap's lighter lead */
+}
+
 /* Soft section borders */
 section {
   position: relative;
@@ -57,7 +65,7 @@ section.border-top {
 --------------------------------------------------------- */
 
 .navbar {
-  background: linear-gradient(90deg, #050708, #060c0f) !important;
+  background: linear-gradient(90deg, #05080a, #081219) !important;
   border-bottom: 1px solid var(--ws-border-subtle);
 }
 
@@ -79,7 +87,7 @@ section.border-top {
 }
 
 .dropdown-menu {
-  background-color: #050708;
+  background-color: #05080a;
   border-radius: var(--ws-radius-md);
   border: 1px solid var(--ws-border-subtle);
 }
@@ -100,9 +108,9 @@ section.border-top {
   padding-top: 4.5rem !important;
   padding-bottom: 3.5rem !important;
   background:
-    radial-gradient(circle at top left, rgba(53, 181, 138, 0.24), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(15, 144, 112, 0.18), transparent 60%),
-    linear-gradient(145deg, #050708, #050708);
+    radial-gradient(circle at top left, rgba(60, 197, 152, 0.32), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(19, 152, 121, 0.22), transparent 60%),
+    linear-gradient(145deg, #05090c, #05090c);
 }
 
 .wildsense-home h1.display-5 {
@@ -111,12 +119,13 @@ section.border-top {
 
 .wildsense-home .lead {
   color: var(--ws-text-muted);
+  font-weight: 400;
 }
 
 /* Hero placeholder panel */
 .wildsense-home .ratio-4x3.rounded-4.border.bg-light {
-  background: radial-gradient(circle at top, #122f27 0%, #050708 70%);
-  border-color: rgba(139, 233, 196, 0.25) !important;
+  background: radial-gradient(circle at top, #163a30 0%, #05090c 72%);
+  border-color: rgba(139, 233, 196, 0.3) !important;
   color: var(--ws-text-muted);
 }
 
@@ -157,7 +166,7 @@ section.border-top {
 --------------------------------------------------------- */
 
 .card {
-  background: radial-gradient(circle at top, #17242c 0%, #10171c 60%, #070a0c 100%);
+  background: radial-gradient(circle at top, #1b2b35 0%, var(--ws-surface) 60%, #070b0f 100%);
   border-radius: var(--ws-radius-lg) !important;
   border: 1px solid var(--ws-border-subtle);
   color: var(--ws-text);
@@ -165,6 +174,7 @@ section.border-top {
 
 .card-body .small {
   color: var(--ws-text-muted);
+  font-weight: 500; /* slightly thicker for legibility */
 }
 
 .card h3,
@@ -176,14 +186,14 @@ section.border-top {
 
 /* Fieldwork diary image placeholders */
 .ratio-4x3.rounded-top-4.bg-light {
-  background: linear-gradient(135deg, #0b5b47, #050708) !important;
+  background: linear-gradient(135deg, #106752, #05090c) !important;
 }
 
 /* Map + other big placeholders */
 .ratio-21x9.rounded-4.border.bg-light,
 .ratio-16x9.rounded-4.border.bg-light,
 .ratio-1x1.rounded-4.border.bg-light {
-  background: radial-gradient(circle at center, #122f27 0%, #050708 65%);
+  background: radial-gradient(circle at center, #163a30 0%, #05090c 68%);
   border-color: rgba(148, 163, 184, 0.35) !important;
   color: var(--ws-text-muted);
 }
@@ -193,7 +203,7 @@ section.border-top {
 --------------------------------------------------------- */
 
 #newsCarousel .card {
-  background: radial-gradient(circle at top, #183633 0%, #10171c 55%, #050708 100%);
+  background: radial-gradient(circle at top, #1c423b 0%, #131c23 55%, #05090c 100%);
 }
 
 #newsCarousel .carousel-control-prev-icon,
@@ -229,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------- */
 
 .section-partners .border.rounded-4 {
-  background: rgba(15, 144, 112, 0.06);
+  background: rgba(19, 152, 121, 0.08);
   border-color: rgba(148, 163, 184, 0.4) !important;
   color: var(--ws-text-muted);
 }
@@ -239,7 +249,18 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------- */
 
 footer {
-  background: #050708;
+  background: #05080a;
   border-top: 1px solid var(--ws-border-subtle);
   color: var(--ws-text-muted);
+}
+
+/* ---------------------------------------------------------
+   News section background fix
+--------------------------------------------------------- */
+
+.section-news,
+.section-news section,
+.section-news .container,
+.section-news .row {
+  background: transparent !important;
 }
