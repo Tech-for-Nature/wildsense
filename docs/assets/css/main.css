@@ -218,7 +218,7 @@ section.border-top {
    (matched to hero/card greens)
 --------------------------------------------------------- */
 
-#newsCarousel .card {
+.wildsense-home section.py-4.bg-light .card {
   background: radial-gradient(
     circle at top,
     rgba(33, 76, 63, 0.55) 0%,    /* same mossy green glow as placeholder */
@@ -230,10 +230,10 @@ section.border-top {
   color: var(--ws-text);
   border-radius: var(--ws-radius-lg) !important;
 
-  /* Optional subtle polish like the placeholder */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(1px);
 }
+
 
 
 #newsCarousel .carousel-control-prev-icon,
