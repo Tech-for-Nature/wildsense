@@ -1,67 +1,75 @@
-{% comment %}
-Reusable News Carousel
+{%- comment -%}
+  News carousel / grid include
 
-Default usage (systems pages):
-  {% include news_carousel.html related=page.system_id %}
+  Usage examples:
 
-Homepage usage (no filter, custom title):
-  {% include news_carousel.html title="News & updates" %}
+  <!-- Latest 3 news items (e.g. homepage) -->
+  {% include news_carousel.html %}
 
-Filter logic:
-- If "related" is passed, show only news posts that include that value.
-- Otherwise, show the 4 most recent news posts.
-{% endcomment %}
+  <!-- Latest 4 news items with custom title -->
+  {% include news_carousel.html title="News & updates" limit=4 %}
 
-{% assign section_title = include.title | default: "Related news" %}
+  <!-- Project-specific news (e.g. on project pages) -->
+  {% include news_carousel.html related=page.project_id %}
+{%- endcomment -%}
 
-{% assign all_news = site.news | sort: "date" | reverse %}
+{%- assign items = site.news | sort: 'date' | reverse -%}
 
-{% if include.related %}
-  {% assign filtered = "" | split: "" %}
-  {% for item in all_news %}
-    {% if item.related_systems contains include.related or item.related_projects contains include.related %}
-      {% assign filtered = filtered | push: item %}
-    {% endif %}
-  {% endfor %}
-{% else %}
-  {% assign filtered = all_news %}
-{% endif %}
+{%- if include.related %}
+  {%- assign filtered = "" | split: "" -%}
+  {%- for item in items -%}
+    {%- if item.project_id == include.related or item.projects contains include.related -%}
+      {%- assign filtered = filtered | push: item -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign items = filtered -%}
+{%- endif -%}
 
-{% if filtered.size > 0 %}
-<section class="py-5 border-top mt-5">
+{%- assign limit = include.limit | default: 3 -%}
+{%- assign items = items | slice: 0, limit -%}
+
+{%- if items.size > 0 -%}
+<section class="py-4 bg-light">
   <div class="container">
 
-    <h2 class="h4 fw-bold mb-4">{{ section_title }}</h2>
-
-    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-
-        {% for item in filtered limit:4 %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-          <div class="card shadow-sm border-0 rounded-4">
-            <div class="card-body">
-              <p class="small text-muted mb-1">{{ item.date | date: "%-d %B %Y" }}</p>
-              <h3 class="h5 fw-bold mb-2">{{ item.title }}</h3>
-              <p class="small">{{ item.summary | default: item.excerpt }}</p>
-              <a href="{{ item.url | relative_url }}" class="small text-decoration-none">
-                Read more →
-              </a>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-
+    <header class="d-flex justify-content-between align-items-baseline mb-3">
+      <div>
+        <p class="text-uppercase small text-muted mb-1">
+          Updates
+        </p>
+        <h2 class="h4 fw-bold mb-0">
+          {{ include.title | default: "News & updates" }}
+        </h2>
       </div>
+      <div>
+        <a href="{{ '/news/' | relative_url }}" class="small text-decoration-none">
+          View all →
+        </a>
+      </div>
+    </header>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-
+    <div class="row g-3">
+      {%- for item in items -%}
+        <div class="col-md-4">
+          <a href="{{ item.url | relative_url }}" class="text-decoration-none d-block h-100">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <p class="small text-muted mb-1">
+                  {{ item.date | date: "%-d %B %Y" }}
+                </p>
+                <h3 class="h6 fw-semibold mb-2">
+                  {{ item.title }}
+                </h3>
+                <p class="small text-muted mb-0">
+                  {{ item.excerpt | strip_html | truncate: 140 }}
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      {%- endfor -%}
     </div>
 
   </div>
 </section>
-{% endif %}
+{%- endif -%}
