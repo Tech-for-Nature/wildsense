@@ -1,12 +1,18 @@
 {% comment %}
 Reusable News Carousel
-Usage:
-{% include news_carousel.html related=page.system_id %}
+
+Default usage (systems pages):
+  {% include news_carousel.html related=page.system_id %}
+
+Homepage usage (no filter, custom title):
+  {% include news_carousel.html title="News & updates" %}
 
 Filter logic:
 - If "related" is passed, show only news posts that include that value.
 - Otherwise, show the 4 most recent news posts.
 {% endcomment %}
+
+{% assign section_title = include.title | default: "Related news" %}
 
 {% assign all_news = site.news | sort: "date" | reverse %}
 
@@ -25,7 +31,7 @@ Filter logic:
 <section class="py-5 border-top mt-5">
   <div class="container">
 
-    <h2 class="h4 fw-bold mb-4">Related news</h2>
+    <h2 class="h4 fw-bold mb-4">{{ section_title }}</h2>
 
     <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
