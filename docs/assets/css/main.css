@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------
    WildSense base theme
-   Dark forest + phthalo green vibes (lighter + unified)
+   Dark forest + phthalo green vibes (unified)
 --------------------------------------------------------- */
 
 :root {
@@ -28,9 +28,17 @@
 --------------------------------------------------------- */
 
 body {
-  background: radial-gradient(circle at top left, #23434b 0%, var(--ws-bg) 55%, #050a0c 100%);
+  background: #050a0c; /* plain dark, gradient sits on .wildsense-home */
   color: var(--ws-text);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Overall homepage background */
+.wildsense-home {
+  background:
+    radial-gradient(circle at top left, rgba(71, 214, 166, 0.42), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(28, 175, 140, 0.28), transparent 60%),
+    linear-gradient(145deg, var(--ws-bg-alt), var(--ws-bg));
 }
 
 main {
@@ -117,10 +125,7 @@ section.border-top {
 .wildsense-home .py-5.py-lg-6 {
   padding-top: 4.5rem !important;
   padding-bottom: 3.5rem !important;
-  background:
-    radial-gradient(circle at top left, rgba(71, 214, 166, 0.42), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(28, 175, 140, 0.28), transparent 60%),
-    linear-gradient(145deg, var(--ws-bg-alt), var(--ws-bg));
+  background: transparent; /* gradient now lives on .wildsense-home */
 }
 
 .wildsense-home h1.display-5 {
@@ -210,7 +215,7 @@ section.border-top {
 
 /* ---------------------------------------------------------
    News carousel
-   (Matched more closely to hero/card greens)
+   (matched to hero/card greens)
 --------------------------------------------------------- */
 
 #newsCarousel .card {
