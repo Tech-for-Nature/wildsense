@@ -221,11 +221,20 @@ section.border-top {
 #newsCarousel .card {
   background: radial-gradient(
     circle at top,
-    #255646 0%,
-    var(--ws-surface) 55%,
-    #07171a 100%
-  );
+    rgba(33, 76, 63, 0.55) 0%,    /* same mossy green glow as placeholder */
+    rgba(9, 23, 26, 0.92) 70%,    /* deep forest-midnight fade */
+    #09171a 100%                  /* final dark tone, identical */
+  ) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--ws-text);
+  border-radius: var(--ws-radius-lg) !important;
+
+  /* Optional subtle polish like the placeholder */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(1px);
 }
+
 
 #newsCarousel .carousel-control-prev-icon,
 #newsCarousel .carousel-control-next-icon {
