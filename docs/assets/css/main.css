@@ -48,6 +48,7 @@ main {
 a {
   color: var(--ws-accent);
 }
+
 a:hover {
   color: var(--ws-green-soft);
 }
@@ -64,6 +65,7 @@ p,
 section {
   position: relative;
 }
+
 section.border-top {
   border-top: 1px solid var(--ws-border-subtle) !important;
 }
@@ -83,6 +85,13 @@ section.border-top {
   border-bottom: 1px solid var(--ws-border-subtle);
 }
 
+/* moth icon next to brand text */
+.ws-brand-icon {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+
 .navbar-brand {
   color: #ffffff !important;
   letter-spacing: 0.04em;
@@ -90,6 +99,7 @@ section.border-top {
   font-weight: 700; /* bolder brand */
 }
 
+/* nav links */
 .navbar-light .navbar-nav .nav-link {
   color: var(--ws-text-muted);
   font-size: 0.9rem;
@@ -97,6 +107,7 @@ section.border-top {
   letter-spacing: 0.07em;
   font-weight: 600; /* thicker nav text */
 }
+
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
   color: var(--ws-accent);
@@ -108,10 +119,12 @@ section.border-top {
   border-radius: var(--ws-radius-md);
   border: 1px solid var(--ws-border-subtle);
 }
+
 .dropdown-item {
   color: var(--ws-text-muted);
   font-size: 0.9rem;
 }
+
 .dropdown-item:hover {
   background-color: #10171c;
   color: var(--ws-accent);
@@ -152,6 +165,7 @@ section.border-top {
   border: none;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
+
 .btn-success:hover {
   background: linear-gradient(135deg, var(--ws-green-soft), var(--ws-green));
 }
@@ -160,6 +174,7 @@ section.border-top {
   border-color: rgba(148, 163, 184, 0.6);
   color: var(--ws-text-muted);
 }
+
 .btn-outline-secondary:hover {
   border-color: var(--ws-accent);
   color: var(--ws-accent);
@@ -170,6 +185,7 @@ section.border-top {
   border-color: var(--ws-green-soft);
   color: var(--ws-green-soft);
 }
+
 .btn-outline-success:hover {
   background-color: rgba(28, 175, 140, 0.18);
   color: #f9fafb;
@@ -216,11 +232,9 @@ section.border-top {
 
 /* ---------------------------------------------------------
    News "Updates" strip
-   (reuse same gradient, add subtle extras)
 --------------------------------------------------------- */
 
 .wildsense-home section.py-4.bg-light .card {
-  /* inherit card background gradient; just enhance */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -240,7 +254,12 @@ section.border-top {
    Typography tweaks
 --------------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: 0.02em;
 }
 
@@ -265,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------------------------------------------------------
-   Footer (if present)
+   Footer
 --------------------------------------------------------- */
 
 footer {

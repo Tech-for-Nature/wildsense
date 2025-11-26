@@ -2,8 +2,11 @@
   <div class="container-fluid">
 
     <!-- Branding -->
-    <a class="navbar-brand fw-bold" href="{{ site.baseurl }}/">
-      {{ site.title }}
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/logos/moth_only.png"
+           alt="WildSense logo"
+           class="ws-brand-icon">
+      <span>{{ site.title }}</span>
     </a>
 
     <!-- Mobile toggle -->
@@ -86,5 +89,6 @@
 
       </ul>
     </div>
+
   </div>
 </nav>
