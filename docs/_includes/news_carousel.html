@@ -11,17 +11,52 @@
 
   <!-- Project-specific news (e.g. on project pages) -->
   {% include news_carousel.html related=page.project_id %}
+
+  <!-- System-specific news (e.g. on system pages) -->
+  {% include news_carousel.html related=page.system_id %}
 {%- endcomment -%}
 
 {%- assign items = site.news | sort: 'date' | reverse -%}
 
 {%- if include.related %}
   {%- assign filtered = "" | split: "" -%}
+
   {%- for item in items -%}
-    {%- if item.project_id == include.related or item.projects contains include.related -%}
+    {%- assign match = false -%}
+
+    {%- comment -%}
+      Direct project match, e.g. project_id: anguilla
+    {%- endcomment -%}
+    {%- if item.project_id and item.project_id == include.related -%}
+      {%- assign match = true -%}
+    {%- endif -%}
+
+    {%- comment -%}
+      Project list match, e.g. projects: [anguilla, costa-rica]
+    {%- endcomment -%}
+    {%- if item.projects and item.projects contains include.related -%}
+      {%- assign match = true -%}
+    {%- endif -%}
+
+    {%- comment -%}
+      Direct system match, e.g. system_id: ami (if you ever use it)
+    {%- endcomment -%}
+    {%- if item.system_id and item.system_id == include.related -%}
+      {%- assign match = true -%}
+    {%- endif -%}
+
+    {%- comment -%}
+      Systems list match, e.g. systems: [ami, acoustics]
+    {%- endcomment -%}
+    {%- if item.systems and item.systems contains include.related -%}
+      {%- assign match = true -%}
+    {%- endif -%}
+
+    {%- if match -%}
       {%- assign filtered = filtered | push: item -%}
     {%- endif -%}
   {%- endfor -%}
+
   {%- assign items = filtered -%}
 {%- endif -%}
 

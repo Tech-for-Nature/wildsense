@@ -1,20 +1,20 @@
 /* ---------------------------------------------------------
    WildSense base theme
-   Dark forest + phthalo green vibes (slightly lighter)
+   Dark forest + phthalo green vibes (lighter)
 --------------------------------------------------------- */
 
 :root {
-  --ws-bg: #05090c;              /* near-black, slightly softened */
-  --ws-bg-alt: #0f191f;          /* deep forest blue-green, lighter */
-  --ws-surface: #131c23;         /* card / panel background */
+  --ws-bg: #071014;              /* near-black, softer */
+  --ws-bg-alt: #102521;          /* deep forest blue-green */
+  --ws-surface: #172630;         /* card / panel background */
   --ws-border-subtle: rgba(255, 255, 255, 0.06);
 
   --ws-text: #f5f5f5;
-  --ws-text-muted: #c0ccd6;      /* a bit brighter for readability */
+  --ws-text-muted: #c7d4de;      /* brighter for readability */
 
-  --ws-green: #139879;           /* phthalo-ish teal green */
-  --ws-green-soft: #3cc598;
-  --ws-green-deep: #0b5f4a;
+  --ws-green: #18a383;           /* phthalo-ish teal green */
+  --ws-green-soft: #43cfa0;
+  --ws-green-deep: #0c6a52;
 
   --ws-accent: #8be9c4;          /* highlight / focus */
   --ws-warning: #facc6b;
@@ -28,7 +28,7 @@
 --------------------------------------------------------- */
 
 body {
-  background: radial-gradient(circle at top left, #192832 0%, var(--ws-bg) 55%, #020406 100%);
+  background: radial-gradient(circle at top left, #1f3740 0%, var(--ws-bg) 55%, #05090c 100%);
   color: var(--ws-text);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -60,12 +60,18 @@ section.border-top {
   border-top: 1px solid var(--ws-border-subtle) !important;
 }
 
+/* Remove white/grey strips on homepage sections using bg-light */
+.wildsense-home section.bg-light,
+.wildsense-home .bg-light {
+  background-color: transparent !important;
+}
+
 /* ---------------------------------------------------------
    Navbar
 --------------------------------------------------------- */
 
 .navbar {
-  background: linear-gradient(90deg, #05080a, #081219) !important;
+  background: linear-gradient(90deg, #05080b, #09141b) !important;
   border-bottom: 1px solid var(--ws-border-subtle);
 }
 
@@ -87,7 +93,7 @@ section.border-top {
 }
 
 .dropdown-menu {
-  background-color: #05080a;
+  background-color: #05080b;
   border-radius: var(--ws-radius-md);
   border: 1px solid var(--ws-border-subtle);
 }
@@ -108,9 +114,9 @@ section.border-top {
   padding-top: 4.5rem !important;
   padding-bottom: 3.5rem !important;
   background:
-    radial-gradient(circle at top left, rgba(60, 197, 152, 0.32), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(19, 152, 121, 0.22), transparent 60%),
-    linear-gradient(145deg, #05090c, #05090c);
+    radial-gradient(circle at top left, rgba(67, 207, 160, 0.38), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(24, 163, 131, 0.26), transparent 60%),
+    linear-gradient(145deg, #071014, #071014);
 }
 
 .wildsense-home h1.display-5 {
@@ -124,7 +130,7 @@ section.border-top {
 
 /* Hero placeholder panel */
 .wildsense-home .ratio-4x3.rounded-4.border.bg-light {
-  background: radial-gradient(circle at top, #163a30 0%, #05090c 72%);
+  background: radial-gradient(circle at top, #1b4236 0%, #071014 72%) !important;
   border-color: rgba(139, 233, 196, 0.3) !important;
   color: var(--ws-text-muted);
 }
@@ -157,7 +163,7 @@ section.border-top {
   color: var(--ws-green-soft);
 }
 .btn-outline-success:hover {
-  background-color: rgba(15, 144, 112, 0.16);
+  background-color: rgba(24, 163, 131, 0.18);
   color: #f9fafb;
 }
 
@@ -166,7 +172,7 @@ section.border-top {
 --------------------------------------------------------- */
 
 .card {
-  background: radial-gradient(circle at top, #1b2b35 0%, var(--ws-surface) 60%, #070b0f 100%);
+  background: radial-gradient(circle at top, #213747 0%, var(--ws-surface) 60%, #070b10 100%);
   border-radius: var(--ws-radius-lg) !important;
   border: 1px solid var(--ws-border-subtle);
   color: var(--ws-text);
@@ -186,14 +192,14 @@ section.border-top {
 
 /* Fieldwork diary image placeholders */
 .ratio-4x3.rounded-top-4.bg-light {
-  background: linear-gradient(135deg, #106752, #05090c) !important;
+  background: linear-gradient(135deg, #137661, #071014) !important;
 }
 
 /* Map + other big placeholders */
 .ratio-21x9.rounded-4.border.bg-light,
 .ratio-16x9.rounded-4.border.bg-light,
 .ratio-1x1.rounded-4.border.bg-light {
-  background: radial-gradient(circle at center, #163a30 0%, #05090c 68%);
+  background: radial-gradient(circle at center, #1b4236 0%, #071014 68%) !important;
   border-color: rgba(148, 163, 184, 0.35) !important;
   color: var(--ws-text-muted);
 }
@@ -203,7 +209,7 @@ section.border-top {
 --------------------------------------------------------- */
 
 #newsCarousel .card {
-  background: radial-gradient(circle at top, #1c423b 0%, #131c23 55%, #05090c 100%);
+  background: radial-gradient(circle at top, #214840 0%, #172630 55%, #071014 100%);
 }
 
 #newsCarousel .carousel-control-prev-icon,
@@ -239,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------- */
 
 .section-partners .border.rounded-4 {
-  background: rgba(19, 152, 121, 0.08);
+  background: rgba(24, 163, 131, 0.09);
   border-color: rgba(148, 163, 184, 0.4) !important;
   color: var(--ws-text-muted);
 }
@@ -249,18 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------- */
 
 footer {
-  background: #05080a;
+  background: #05080b;
   border-top: 1px solid var(--ws-border-subtle);
   color: var(--ws-text-muted);
-}
-
-/* ---------------------------------------------------------
-   News section background fix
---------------------------------------------------------- */
-
-.section-news,
-.section-news section,
-.section-news .container,
-.section-news .row {
-  background: transparent !important;
 }
