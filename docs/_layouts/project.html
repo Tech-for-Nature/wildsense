@@ -1,0 +1,130 @@
+---
+layout: default
+---
+
+<!--
+  Project layout
+
+  Front matter fields you can set on each project page:
+
+  title: "Anguilla – Migratory Insects & Biodiversity"
+  tagline: "Testing automated monitoring systems on a small island at a global crossroads"
+  status: "In progress"                     # optional
+  region: "Caribbean"                       # optional
+  systems:
+    - ami
+    - acoustics
+    - ultrasonic
+  partners:
+    - "Anguilla Department of Environment"
+    - "Local NGOs"
+  hero_image: "/projects/anguilla/images/hero.jpg"  # optional
+-->
+
+<article class="py-4 project-page">
+
+  <!-- Hero -->
+  <header class="mb-4">
+    <p class="text-uppercase small text-muted mb-1">
+      WildSense project
+    </p>
+    <h1 class="h2 fw-bold mb-2">
+      {{ page.title }}
+    </h1>
+
+    {% if page.tagline %}
+      <p class="lead mb-3">{{ page.tagline }}</p>
+    {% endif %}
+
+    <div class="d-flex flex-wrap gap-3 align-items-center small">
+      {% if page.status %}
+        <span class="badge bg-success-subtle text-success border border-success-subtle">
+          {{ page.status }}
+        </span>
+      {% endif %}
+
+      {% if page.region %}
+        <span class="badge bg-light text-muted border">
+          {{ page.region }}
+        </span>
+      {% endif %}
+
+      {% if page.systems %}
+        <span class="badge bg-light text-muted border">
+          Systems:
+          {% for sys in page.systems %}
+            {{ sys }}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- Optional hero image -->
+  {% if page.hero_image %}
+    <div class="mb-4 rounded-4 overflow-hidden shadow-sm">
+      <img src="{{ site.baseurl }}{{ page.hero_image }}"
+           alt="{{ page.title }} – project image"
+           class="img-fluid w-100">
+    </div>
+  {% endif %}
+
+  <!-- Main layout -->
+  <div class="row g-4">
+    <div class="col-lg-8">
+
+      <!-- Main content from the page -->
+      <section id="overview" class="mb-4">
+        {{ content }}
+      </section>
+
+    </div>
+
+    <aside class="col-lg-4">
+
+      {% if page.partners %}
+      <section class="mb-4">
+        <h2 class="h6 text-uppercase text-muted">Partners</h2>
+        <ul class="small list-unstyled mb-0">
+          {% for partner in page.partners %}
+            <li class="mb-1">{{ partner }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if page.systems %}
+      <section class="mb-4">
+        <h2 class="h6 text-uppercase text-muted">Systems used</h2>
+        <ul class="small list-unstyled mb-0">
+          {% for sys in page.systems %}
+            <li class="mb-1">
+              {% case sys %}
+                {% when "ami" %}
+                  <a href="{{ site.baseurl }}/systems/ami/" class="text-decoration-none">AMI →</a>
+                {% when "lepisense" %}
+                  <a href="{{ site.baseurl }}/systems/lepisense/" class="text-decoration-none">LepiSense →</a>
+                {% when "acoustics" %}
+                  <a href="{{ site.baseurl }}/systems/acoustics/" class="text-decoration-none">Acoustic monitoring →</a>
+                {% when "ultrasonic" %}
+                  <a href="{{ site.baseurl }}/systems/ultrasonic/" class="text-decoration-none">Ultrasonic monitoring →</a>
+                {% when "other" %}
+                  <a href="{{ site.baseurl }}/systems/other_technology/" class="text-decoration-none">Other monitoring technologies →</a>
+                {% else %}
+                  {{ sys }}
+              {% endcase %}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+    </aside>
+  </div>
+
+  <!-- Related news (by project id) -->
+  {% if page.project_id %}
+    {% include news_carousel.html related=page.project_id %}
+  {% endif %}
+
+</article>
