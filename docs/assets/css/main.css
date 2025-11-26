@@ -274,6 +274,64 @@ h6 {
 }
 
 /* ---------------------------------------------------------
+   Content pages (systems, projects, news indexes)
+   → Lighter panels on the dark background
+--------------------------------------------------------- */
+
+.system-page,
+.project-page,
+.news-page {
+  background-color: #f5f7fb;
+  color: #0f172a;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+}
+
+/* Headings and text inside these panels */
+.system-page h1,
+.system-page h2,
+.system-page h3,
+.system-page h4,
+.system-page h5,
+.system-page h6,
+.project-page h1,
+.project-page h2,
+.project-page h3,
+.project-page h4,
+.project-page h5,
+.project-page h6,
+.news-page h1,
+.news-page h2,
+.news-page h3,
+.news-page h4,
+.news-page h5,
+.news-page h6 {
+  color: #020617;
+}
+
+.system-page p,
+.project-page p,
+.news-page p {
+  color: #111827;
+}
+
+/* Links inside content panels */
+.system-page a,
+.project-page a,
+.news-page a {
+  color: #0f766e;
+}
+
+.system-page a:hover,
+.project-page a:hover,
+.news-page a:hover {
+  color: #22c55e;
+}
+
+/* ---------------------------------------------------------
    Partners strip
 --------------------------------------------------------- */
 
