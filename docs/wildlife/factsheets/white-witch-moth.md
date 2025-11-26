@@ -5,7 +5,7 @@ common_name: "White Witch"
 scientific_name: "Thysania agrippina"
 taxon_group: "Moths"
 permalink: /wildlife/factsheets/white-witch/
-hero_image: /wildlife/images/white-witch-placeholder.jpg
+hero_image: /wildlife/images/white-witch-placeholder.png
 key_facts:
   - One of the largest moths in the world by wingspan.
   - Observed by the AMBER network using AMI imaging systems.

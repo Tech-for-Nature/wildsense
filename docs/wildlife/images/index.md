@@ -25,7 +25,7 @@ permalink: /wildlife/images/
           <div class="card h-100 shadow-sm border-0">
             <div class="ratio ratio-4x3 rounded-top-4 bg-light">
               <!-- Placeholder image for now -->
-              <img src="{{ site.baseurl }}/wildlife/images/white-witch-placeholder.jpg"
+              <img src="{{ site.baseurl }}/wildlife/images/white-witch-placeholder.png"
                    alt="White Witch moth"
                    class="img-fluid rounded-top-4">
             </div>
