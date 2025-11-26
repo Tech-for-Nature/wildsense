@@ -180,8 +180,10 @@ section.border-top {
    Cards & panels
 --------------------------------------------------------- */
 
+/* Base card look used by news, fieldwork, spotlight, etc.
+   Matches the hero placeholder gradient */
 .card {
-  background: radial-gradient(circle at top, #264553 0%, var(--ws-surface) 60%, #071015 100%);
+  background: radial-gradient(circle at top, #214c3f 0%, #09171a 72%);
   border-radius: var(--ws-radius-lg) !important;
   border: 1px solid var(--ws-border-subtle);
   color: var(--ws-text);
@@ -199,7 +201,7 @@ section.border-top {
   color: #f9fafb;
 }
 
-/* Fieldwork diary image placeholders */
+/* Fieldwork diary image placeholders (top half of those cards) */
 .ratio-4x3.rounded-top-4.bg-light {
   background: linear-gradient(135deg, #16856a, #09171a) !important;
 }
@@ -214,28 +216,17 @@ section.border-top {
 }
 
 /* ---------------------------------------------------------
-   News carousel
-   (matched to hero/card greens)
+   News "Updates" strip
+   (reuse same gradient, add subtle extras)
 --------------------------------------------------------- */
 
 .wildsense-home section.py-4.bg-light .card {
-  background: radial-gradient(
-    circle at top,
-    rgba(33, 76, 63, 0.55) 0%,    /* same mossy green glow as placeholder */
-    rgba(9, 23, 26, 0.92) 70%,    /* deep forest-midnight fade */
-    #09171a 100%                  /* final dark tone, identical */
-  ) !important;
-
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  color: var(--ws-text);
-  border-radius: var(--ws-radius-lg) !important;
-
+  /* inherit card background gradient; just enhance */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-
-
+/* (These selectors are harmless if #newsCarousel doesn't exist yet) */
 #newsCarousel .carousel-control-prev-icon,
 #newsCarousel .carousel-control-next-icon {
   filter: invert(0.9) grayscale(1);
