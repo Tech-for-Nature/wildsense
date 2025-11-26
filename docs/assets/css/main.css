@@ -389,3 +389,11 @@ footer {
   border-top: 1px solid var(--ws-border-subtle);
   color: var(--ws-text-muted);
 }
+
+/* Fix dropdown spacing under navbar */
+.navbar .dropdown-menu {
+  margin-top: 0 !important;
+  transform: translateY(0) !important;
+  top: 100% !important;
+}
+
