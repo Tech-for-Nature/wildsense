@@ -77,14 +77,20 @@
           <a class="nav-link" href="{{ site.baseurl }}/wildlife/">Wildlife Showcase</a>
         </li>
 
-        <!-- Partners -->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ site.baseurl }}/partners/">Partners</a>
-        </li>
-
-        <!-- About -->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ site.baseurl }}/about/">About</a>
+        <!-- About (new dropdown) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="aboutDropdown">
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/about/">WildSense Overview</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/about/team/">Meet the Team</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/about/partners/">Partners</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/about/funders/">Funding Bodies</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/about/contact/">Contact</a></li>
+          </ul>
         </li>
 
       </ul>
