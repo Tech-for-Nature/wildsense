@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<article class="py-4">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="mb-4">
+      <p class="text-uppercase small text-muted mb-1">Wildlife factsheet</p>
+      <h1 class="h3 fw-bold mb-1">{{ page.common_name | default: page.title }}</h1>
+
+      {% if page.scientific_name %}
+        <p class="fst-italic mb-1">{{ page.scientific_name }}</p>
+      {% endif %}
+
+      {% if page.taxon_group %}
+        <p class="small text-muted mb-0">{{ page.taxon_group }}</p>
+      {% endif %}
+    </header>
+
+    <!-- Hero image -->
+    {% if page.hero_image %}
+      <div class="mb-4 rounded-4 overflow-hidden shadow-sm">
+        <img src="{{ site.baseurl }}{{ page.hero_image }}"
+             alt="{{ page.common_name | default: page.title }}"
+             class="img-fluid w-100">
+      </div>
+    {% endif %}
+
+    <!-- Main content -->
+    <div class="row g-4">
+      <div class="col-lg-8">
+        {{ content }}
+      </div>
+
+      <aside class="col-lg-4">
+        {% if page.key_facts %}
+        <section class="mb-4">
+          <h2 class="h6 text-uppercase text-muted">Key facts</h2>
+          <ul class="small mb-0">
+            {% for fact in page.key_facts %}
+              <li>{{ fact }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+
+        {% if page.countries %}
+        <section class="mb-4">
+          <h2 class="h6 text-uppercase text-muted">Recorded in</h2>
+          <p class="small mb-0">
+            {% for c in page.countries %}
+              {{ c }}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+        </section>
+        {% endif %}
+      </aside>
+    </div>
+
+  </div>
+</article>
