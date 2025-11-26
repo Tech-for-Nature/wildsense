@@ -35,6 +35,15 @@ twitter_username: jekyllrb       # update later if you make a WildSense Twitter/
 github_username: Tech-for-Nature # org account for now
 
 # ------------------------------------------------------------------------------
+# Collections
+# ------------------------------------------------------------------------------
+
+collections:
+  news:
+    output: true
+    permalink: /news/:slug/
+
+# ------------------------------------------------------------------------------
 # Build Settings
 # ------------------------------------------------------------------------------
 

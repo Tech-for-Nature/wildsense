@@ -1,0 +1,61 @@
+{% comment %}
+Reusable News Carousel
+Usage:
+{% include news_carousel.html related=page.system_id %}
+
+Filter logic:
+- If "related" is passed, show only news posts that include that value.
+- Otherwise, show the 4 most recent news posts.
+{% endcomment %}
+
+{% assign all_news = site.news | sort: "date" | reverse %}
+
+{% if include.related %}
+  {% assign filtered = "" | split: "" %}
+  {% for item in all_news %}
+    {% if item.related_systems contains include.related or item.related_projects contains include.related %}
+      {% assign filtered = filtered | push: item %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% assign filtered = all_news %}
+{% endif %}
+
+{% if filtered.size > 0 %}
+<section class="py-5 border-top mt-5">
+  <div class="container">
+
+    <h2 class="h4 fw-bold mb-4">Related news</h2>
+
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        {% for item in filtered limit:4 %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body">
+              <p class="small text-muted mb-1">{{ item.date | date: "%-d %B %Y" }}</p>
+              <h3 class="h5 fw-bold mb-2">{{ item.title }}</h3>
+              <p class="small">{{ item.summary | default: item.excerpt }}</p>
+              <a href="{{ item.url | relative_url }}" class="small text-decoration-none">
+                Read more →
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+  </div>
+</section>
+{% endif %}
