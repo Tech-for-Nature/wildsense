@@ -28,7 +28,9 @@ We’re combining:
 - **Community engagement** to highlight the importance of insects as environmental indicators.
 
 ## Aims
-- Test how well AMI systems operate in the context of exposed island environment.
-- Evaluate the potential of automated monitoring systems to measure the response of insects to habitat restoration in island ecosystems
-- Develop practical workflows for deployment, data retrieval, and analysis with local partners.
-- Co-design biodiversity monitoring and indicators that are meaningful for Anguilla’s conservation priorities.
+- Test how well AMI systems operate in the context of exposed island environments
+- Evaluate new technologies to measure the response of insects to habitat restoration in island ecosystems
+- Develop practical workflows for deployment, data retrieval, and analysis with local partners
+- Co-design biodiversity monitoring and indicators that are meaningful for Anguilla’s conservation priorities
+
+## Project reports
