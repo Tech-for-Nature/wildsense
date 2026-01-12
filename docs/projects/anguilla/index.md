@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Anguilla – shining a light on Anguilla's moths"
+title: "Anguilla – shining a light on Anguilla's moths."
 tagline: "Testing automated monitoring systems for insects on islands"
 status: "In progress"
 region: "Caribbean"
