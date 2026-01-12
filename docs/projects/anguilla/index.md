@@ -32,5 +32,3 @@ We’re combining:
 - Evaluate the potential of automated monitoring systems to measure the response of insects to habitat restoration in island ecosystems
 - Develop practical workflows for deployment, data retrieval, and analysis with local partners.
 - Co-design biodiversity monitoring and indicators that are meaningful for Anguilla’s conservation priorities.
-
-## project reports
