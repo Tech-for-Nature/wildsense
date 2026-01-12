@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Anguilla – Migratory Insect & Biodiversity Monitoring"
-tagline: "Testing automated monitoring systems on a small island at a global crossroads"
+title: "Anguilla – shining a light on Anguilla's moths"
+tagline: "Testing automated monitoring systems for insects on islands"
 status: "In progress"
 region: "Caribbean"
 project_id: "anguilla"
@@ -28,6 +28,7 @@ We’re combining:
 - **Community engagement** to highlight the importance of insects as environmental indicators.
 
 ## Aims
-- Test how well AMI and acoustic systems operate in a small, exposed island environment.
+- Test how well AMI systems operate in the context of exposed island environment.
+- Evaluate the potential of automated monitoring systems to measure the response of insects to habitat restoration in island ecosystems
 - Develop practical workflows for deployment, data retrieval, and analysis with local partners.
 - Co-design biodiversity monitoring and indicators that are meaningful for Anguilla’s conservation priorities.
