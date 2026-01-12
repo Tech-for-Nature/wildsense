@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # AMBER Dashboard
 
-Dashboard for AMBER project currently hosted [here](https://ami-system.github.io/amber-dashboard/).
+Dashboard for AMI project currently hosted [here](https://tech-for-nature.github.io/wildsense/).
 
 ## Running locally
 
