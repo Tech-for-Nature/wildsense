@@ -16,6 +16,7 @@ https://tech-for-nature.github.io/wildsense/
 
 ## 📁 Site Structure Overview
 
+```
 docs/
 │
 ├── _includes/        → Reusable components (navbar, carousel, etc.)
@@ -30,8 +31,7 @@ docs/
 │
 ├── assets/           → Images, CSS, JS
 └── index.md          → Homepage
-
----
+```
 
 ## 📰 Adding a News Post
 
@@ -51,6 +51,7 @@ Example:
 
 ### Step 2 — Add front matter at the top
 
+```yaml
 ---
 layout: post
 title: "AMI deployment begins in Anguilla"
@@ -58,6 +59,7 @@ summary: "Four new automated monitoring systems installed across coastal habitat
 related_projects: [anguilla]
 related_systems: [ami]
 ---
+```
 
 ### Step 3 — Write content in Markdown
 
@@ -87,6 +89,7 @@ images/
 
 ### Basic Project Page Template
 
+```yaml
 ---
 layout: project
 title: "Project Title"
@@ -96,7 +99,9 @@ region: "Caribbean"
 project_id: project-name
 systems: [ami, lepisense]
 ---
+```
 
+```markdown
 ## Overview
 
 Write project overview here.
@@ -105,8 +110,7 @@ Write project overview here.
 
 - Objective one
 - Objective two
-
----
+```
 
 ## 🖼 Adding Images
 
