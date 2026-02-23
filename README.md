@@ -1,40 +1,195 @@
-<<<<<<< HEAD
-# AMBER Dashboard
+# WildSense Website
 
-Dashboard for AMI project currently hosted [here](https://tech-for-nature.github.io/wildsense/).
+Official website for **WildSense – Automated Biodiversity Monitoring Platform**.
 
-## Running locally
+Built using **Jekyll + GitHub Pages**.
 
-This page is built using jekyll. The source files are saved in `_docs`. To test the page locally, you will need to [install jekyll](https://jekyllrb.com/docs/installation/) and make sure you are in the `docs` dir:
+This document explains how to update content safely without breaking the site.
 
-```
-cd docs
-```
+---
 
-then run:
+## 🌐 Live Site
 
-```
-bundle exec jekyll serve
-```
+https://tech-for-nature.github.io/wildsense/
 
-## New Stories
+---
 
-To add a new story, follow the instructions in `README_ADD_STORY.md`.
+## 📁 Site Structure Overview
 
-## New Deployments
+docs/
+│
+├── _includes/        → Reusable components (navbar, carousel, etc.)
+├── _layouts/         → Page templates
+├── _news/            → News posts (blog updates)
+│
+├── systems/          → Monitoring system pages
+├── projects/         → Individual project pages
+├── diaries/          → Fieldwork diaries
+├── wildlife/         → Wildlife showcase
+├── partners/         → Partner information
+│
+├── assets/           → Images, CSS, JS
+└── index.md          → Homepage
 
-To add a new deployment to the map story, simply update the `points_of_interest.json` file in the `map` directory with the new deployment details.
+---
 
-## Adding Media
+## 📰 Adding a News Post
 
-If you are loading in large videos, images or gifs, we recommend you source them from elsewhere. We have been using Google Drive and then sourcing them using the share links, making sure 'Anyone with the link' can view. You will also need to make sure the link follows the format `https://drive.google.com/file/d/FILE_ID/preview`, instead of the default `https://drive.google.com/file/d/FILE_ID/view?usp=drive_link`.
+All news posts live in:
 
-## Analytics
+docs/_news/
 
-The AMBER Dashboard uses Google Analytics 4 for tracking user interactions. The tracking code is included in the `<head>` section of each HTML file (sourced from `google_analytics.html`).
+### Step 1 — Create a new file
 
-To view the metrics, you will need access to the Google Analytics account associated with the AMBER project. Contact Kat, Tom or David.
-=======
-# tech_team_dashboard
-Generalised dashboard for AMI – Automatic Monitoring of Insects
->>>>>>> 0e258ba3d8d5e744eb15690665f3f94410f8dadf
+File name format:
+
+YYYY-MM-DD-title.md
+
+Example:
+
+2025-02-10-anguilla-deployment.md
+
+### Step 2 — Add front matter at the top
+
+---
+layout: post
+title: "AMI deployment begins in Anguilla"
+summary: "Four new automated monitoring systems installed across coastal habitats."
+related_projects: [anguilla]
+related_systems: [ami]
+---
+
+### Step 3 — Write content in Markdown
+
+Our team has deployed four AMI camera systems...
+
+Read more about the [Anguilla project]({{ site.baseurl }}/projects/anguilla/).
+
+✅ The news carousel will update automatically.  
+✅ Related posts will show on relevant system/project pages.
+
+---
+
+## 📂 Adding a New Project
+
+Projects live in:
+
+docs/projects/
+
+Each project has its own folder:
+
+docs/projects/project-name/
+
+Inside that folder:
+
+index.md  
+images/
+
+### Basic Project Page Template
+
+---
+layout: project
+title: "Project Title"
+tagline: "Short project description"
+status: "In progress"
+region: "Caribbean"
+project_id: project-name
+systems: [ami, lepisense]
+---
+
+## Overview
+
+Write project overview here.
+
+## Objectives
+
+- Objective one
+- Objective two
+
+---
+
+## 🖼 Adding Images
+
+Place images inside:
+
+docs/projects/project-name/images/
+
+Reference them like this:
+
+![Field deployment](images/deployment.jpg)
+
+---
+
+## 🔗 Adding Hyperlinks in Text
+
+Standard Markdown link:
+
+[Link text](https://example.com)
+
+Internal link:
+
+[AMI System]({{ site.baseurl }}/systems/ami/)
+
+Open in new tab:
+
+<a href="https://example.com" target="_blank">External link</a>
+
+---
+
+## 📄 Adding Downloadable Documents (PDFs, Reports)
+
+Create a folder inside the project:
+
+docs/projects/project-name/docs/
+
+Upload your PDF there.
+
+Link to it like this:
+
+[Download full report](docs/report.pdf)
+
+---
+
+## 🎨 Styling Notes
+
+Global styling is controlled via:
+
+assets/css/
+
+Reusable components live in:
+
+_includes/
+
+Layout templates live in:
+
+_layouts/
+
+Avoid editing layout files unless you understand Jekyll structure.
+
+---
+
+## 🚀 Publishing Changes
+
+### If editing locally:
+
+git add .
+git commit -m "update project page"
+git push
+
+GitHub Pages will automatically rebuild the site.
+
+### If editing via GitHub website:
+
+1. Edit file  
+2. Commit changes  
+
+The site updates automatically.
+
+---
+
+## ⚠ Important Rules
+
+- Do NOT rename _news, _layouts, or _includes
+- Always use correct front matter at top of files
+- File names for news MUST include date
+- Project folders must contain index.md
