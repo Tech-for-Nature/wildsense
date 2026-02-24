@@ -14,7 +14,7 @@ partners:
   - "Anguilla National Trust"
   - "UK Centre for Ecology & Hydrology"
 
-hero_image: "/projects/anguilla/images/hero.jpg"
+hero_image: "/projects/anguilla/images/hero1.jpg"
 ---
 
 ## Overview
