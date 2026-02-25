@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: "First AMI field season in Anguilla"
