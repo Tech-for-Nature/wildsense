@@ -2,7 +2,7 @@
 layout: default
 title: "Anguilla National Trust Night Hike"
 date: 2025-11-25
-hero_image: "{{ site.baseurl }}/_news/images/591592605_1311861004312862_3059152727945315754_n.jpg"
+hero_image: "{{ site.baseurl }}/assets/images/news/2025-11-25-night-hike/591592605_1311861004312862_3059152727945315754_n.jpg"
 summary: "Nature Week celebrations with a night hike."
 related_systems:
   - ami
@@ -20,13 +20,13 @@ Nature Week once again underscored the importance of local and international par
 <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
 
   <div style="flex: 1; min-width: 300px;">
-    <img src="{{ site.baseurl }}/_news/images/night-hike-moth.jpg"
+    <img src="{{ site.baseurl }}/assets/images/news/2025-11-25-night-hike/night-hike-moth.jpg"
          alt="Moth seen on night walk"
          style="width: 100%; border-radius: 6px;">
   </div>
 
   <div style="flex: 1; min-width: 300px;">
-    <img src="{{ site.baseurl }}/_news/images/night-hike-spider.jpg"
+    <img src="{{ site.baseurl }}/assets/images/news/2025-11-25-night-hike/night-hike-spider.jpg"
          alt="Spider recorded during the night hike"
          style="width: 100%; border-radius: 6px;">
   </div>
