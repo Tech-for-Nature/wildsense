@@ -17,18 +17,81 @@ Together, the events offered something for everyone, blending exploration, scien
 
 Nature Week once again underscored the importance of local and international partnerships in safeguarding Anguilla’s natural heritage—and the enthusiasm of a community eager to learn, explore, and protect the island’s wild spaces.
 
-<div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+<h2 class="ws-section-title mt-5">Night hike gallery</h2>
 
-  <div style="flex: 1; min-width: 300px;">
-    <img src="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg"
-         alt="Moth seen on night walk"
-         style="width: 100%; border-radius: 6px;">
+<div class="d-flex align-items-center gap-2">
+
+  <!-- Left arrow -->
+  <button class="btn btn-outline-success btn-sm"
+          type="button"
+          onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: -420, behavior: 'smooth' });"
+          aria-label="Scroll left">
+    ‹
+  </button>
+
+  <!-- Thumbnails (scrollable) -->
+  <div id="nightHikeThumbs"
+       style="display: flex; gap: 12px; overflow-x: auto; scroll-behavior: smooth; padding: 6px 2px;">
+    
+    <!-- Thumb 1 -->
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg"
+           alt="Night hike moth"
+           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+    </a>
+
+    <!-- Thumb 2 -->
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg"
+           alt="Night hike spider"
+           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+    </a>
+
+    <!-- Thumb 3 -->
+    <a href="{{ site.baseurl }}/assets/images/news/lizard-in-hand.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/lizard-in-hand.jpg"
+           alt="Lizard in hand"
+           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+    </a>
+
+    <!-- Thumb 4 -->
+    <a href="{{ site.baseurl }}/assets/images/news/lizard-on-tree.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/lizard-on-tree.jpg"
+           alt="Lizard on tree"
+           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+    </a>
+
+    <!-- Add more thumbs below (they'll scroll) -->
+    <a href="{{ site.baseurl }}/assets/images/news/night-bee.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-bee.jpg"
+           alt="Night bee"
+           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/Davids-talk.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/Davids-talk.jpg"
+           alt="David's talk"
+           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-moth-2.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-moth-2.jpg"
+           alt="Night moth close-up"
+           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+    </a>
+
   </div>
 
-  <div style="flex: 1; min-width: 300px;">
-    <img src="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg"
-         alt="Spider recorded during the night hike"
-         style="width: 100%; border-radius: 6px;">
-  </div>
+  <!-- Right arrow -->
+  <button class="btn btn-outline-success btn-sm"
+          type="button"
+          onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: 420, behavior: 'smooth' });"
+          aria-label="Scroll right">
+    ›
+  </button>
 
 </div>
+
+<p class="small text-muted mt-2 mb-0">
+  Click an image to open the full-size version in a new tab.
+</p>
