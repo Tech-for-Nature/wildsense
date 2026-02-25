@@ -21,77 +21,73 @@ Nature Week once again underscored the importance of local and international par
 
 <div class="d-flex align-items-center gap-2">
 
-  <!-- Left arrow -->
   <button class="btn btn-outline-success btn-sm"
           type="button"
           onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: -520, behavior: 'smooth' });"
-          aria-label="Scroll left">
-    ‹
-  </button>
+          aria-label="Scroll left">‹</button>
 
-  <!-- Thumbnails (scrollable) -->
   <div id="nightHikeThumbs"
        style="display:flex; gap:12px; overflow-x:auto; padding:6px 2px; scroll-behavior:smooth; -webkit-overflow-scrolling:touch;">
 
-    <!-- NOTE: filenames must match EXACTLY (case-sensitive) -->
-
-    <a href="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg"
-           alt="Night hike moth"
+    <a href="{{ site.baseurl }}/assets/images/news/lepi-photo.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/lepi-photo.jpg" alt="Moth photo"
            style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
-    <a href="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg"
-           alt="Night hike spider"
+    <a href="{{ site.baseurl }}/assets/images/news/spider-web-photo.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/spider-web-photo.jpg" alt="Spider web photo"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/bee-photo.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/bee-photo.jpg" alt="Bee photo"
            style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
     <a href="{{ site.baseurl }}/assets/images/news/lizard-in-hand.jpg" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/images/news/lizard-in-hand.jpg"
-           alt="Lizard in hand"
+      <img src="{{ site.baseurl }}/assets/images/news/lizard-in-hand.jpg" alt="Lizard in hand"
            style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
     <a href="{{ site.baseurl }}/assets/images/news/lizard-on-tree.jpg" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/images/news/lizard-on-tree.jpg"
-           alt="Lizard on tree"
-           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
-    </a>
-
-    <a href="{{ site.baseurl }}/assets/images/news/night-bee.jpg" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/images/news/night-bee.jpg"
-           alt="Night bee"
+      <img src="{{ site.baseurl }}/assets/images/news/lizard-on-tree.jpg" alt="Lizard on tree"
            style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
     <a href="{{ site.baseurl }}/assets/images/news/Davids-talk.jpg" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/images/news/Davids-talk.jpg"
-           alt="David's talk"
+      <img src="{{ site.baseurl }}/assets/images/news/Davids-talk.jpg" alt="David's talk"
            style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
     <a href="{{ site.baseurl }}/assets/images/news/night-moth-2.jpg" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/images/news/night-moth-2.jpg"
-           alt="Night moth close-up"
+      <img src="{{ site.baseurl }}/assets/images/news/night-moth-2.jpg" alt="Night moth close-up"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <!-- Optional: keep these too if you want -->
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg" alt="Night hike moth"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg" alt="Night hike spider"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-bee.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-bee.jpg" alt="Night bee"
            style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
   </div>
 
-  <!-- Right arrow -->
   <button class="btn btn-outline-success btn-sm"
           type="button"
           onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: 520, behavior: 'smooth' });"
-          aria-label="Scroll right">
-    ›
-  </button>
+          aria-label="Scroll right">›</button>
 
 </div>
-
-<p class="small text-muted mt-2 mb-0">
-  Click an image to open the full-size version in a new tab.
-</p>
 
 <p class="small text-muted mt-2 mb-0">
   Click an image to open the full-size version in a new tab.
