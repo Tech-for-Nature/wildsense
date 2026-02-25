@@ -2,7 +2,7 @@
 layout: default
 title: "Anguilla National Trust Night Hike"
 date: 2025-11-25
-hero_image: "{{ site.baseurl }}/assets/images/news/591592605_1311861004312862_3059152727945315754_n.jpg"
+hero_image: "/assets/images/news/591592605_1311861004312862_3059152727945315754_n.jpg"
 summary: "Nature Week celebrations with a night hike."
 related_systems:
   - ami
@@ -24,60 +24,57 @@ Nature Week once again underscored the importance of local and international par
   <!-- Left arrow -->
   <button class="btn btn-outline-success btn-sm"
           type="button"
-          onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: -420, behavior: 'smooth' });"
+          onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: -520, behavior: 'smooth' });"
           aria-label="Scroll left">
     ‹
   </button>
 
   <!-- Thumbnails (scrollable) -->
   <div id="nightHikeThumbs"
-       style="display: flex; gap: 12px; overflow-x: auto; scroll-behavior: smooth; padding: 6px 2px;">
-    
-    <!-- Thumb 1 -->
+       style="display:flex; gap:12px; overflow-x:auto; padding:6px 2px; scroll-behavior:smooth; -webkit-overflow-scrolling:touch;">
+
+    <!-- NOTE: filenames must match EXACTLY (case-sensitive) -->
+
     <a href="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg" target="_blank" rel="noopener">
       <img src="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg"
            alt="Night hike moth"
-           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
-    <!-- Thumb 2 -->
     <a href="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg" target="_blank" rel="noopener">
       <img src="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg"
            alt="Night hike spider"
-           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
-    <!-- Thumb 3 -->
     <a href="{{ site.baseurl }}/assets/images/news/lizard-in-hand.jpg" target="_blank" rel="noopener">
       <img src="{{ site.baseurl }}/assets/images/news/lizard-in-hand.jpg"
            alt="Lizard in hand"
-           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
-    <!-- Thumb 4 -->
     <a href="{{ site.baseurl }}/assets/images/news/lizard-on-tree.jpg" target="_blank" rel="noopener">
       <img src="{{ site.baseurl }}/assets/images/news/lizard-on-tree.jpg"
            alt="Lizard on tree"
-           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
-    <!-- Add more thumbs below (they'll scroll) -->
     <a href="{{ site.baseurl }}/assets/images/news/night-bee.jpg" target="_blank" rel="noopener">
       <img src="{{ site.baseurl }}/assets/images/news/night-bee.jpg"
            alt="Night bee"
-           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
     <a href="{{ site.baseurl }}/assets/images/news/Davids-talk.jpg" target="_blank" rel="noopener">
       <img src="{{ site.baseurl }}/assets/images/news/Davids-talk.jpg"
            alt="David's talk"
-           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
     <a href="{{ site.baseurl }}/assets/images/news/night-moth-2.jpg" target="_blank" rel="noopener">
       <img src="{{ site.baseurl }}/assets/images/news/night-moth-2.jpg"
            alt="Night moth close-up"
-           style="height: 90px; width: 140px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
     </a>
 
   </div>
@@ -85,12 +82,16 @@ Nature Week once again underscored the importance of local and international par
   <!-- Right arrow -->
   <button class="btn btn-outline-success btn-sm"
           type="button"
-          onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: 420, behavior: 'smooth' });"
+          onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: 520, behavior: 'smooth' });"
           aria-label="Scroll right">
     ›
   </button>
 
 </div>
+
+<p class="small text-muted mt-2 mb-0">
+  Click an image to open the full-size version in a new tab.
+</p>
 
 <p class="small text-muted mt-2 mb-0">
   Click an image to open the full-size version in a new tab.
