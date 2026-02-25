@@ -1,15 +1,37 @@
 ---
 layout: default
-title: "First AMI field season in Anguilla"
-date: 2025-01-15
+title: "Anguilla National Trsut Night Hike"
+date: 2025-11-25
 hero_image: /assets/images/news/anguilla-season-1.jpg
-summary: "Our first AMI units are now running in Anguilla, monitoring nocturnal insects across key coastal sites."
+summary: "Nature Week celebrations with a night hike."
 related_systems:
   - ami
 ---
 
-We have deployed our first AMI (Automated Monitoring of Insects) units in Anguilla in collaboration with local
-partners. The systems are monitoring nocturnal insects across a range of coastal and inland habitats.
+**Anguilla National Trust Nature Week** brought the island’s unique wildlife and conservation efforts into sharp focus.
+Which began with a guided night hike through The Valley’s agricultural lands. 
+Participants set out after dark in search of nocturnal wildlife, discovering the **“night critters”** that often go unseen but play vital roles in the island’s ecosystems. The walk offered a rare chance for residents and visitors alike to experience Anguilla’s natural world from a new perspective.
 
-This deployment will help us understand migratory insect movements and build the evidence base needed to support
-future conservation decisions on the island.
+Together, the events offered something for everyone, blending exploration, science, and community engagement into a week that celebrated both curiosity and conservation.
+Organizers expressed deep gratitude to all who participated, as well as to the partners whose expertise and collaboration made the week possible: Dr. David Roy and Dr. Helen Roy of the UK Centre for Ecology & Hydrology, and Dr. Matthew Witt of the University of Exeter – International. Special thanks were also extended to the UK Government’s Biodiversity Challenge Funds (Darwin Plus Initiative) and Flora & Fauna’s Conservation Leadership Programme for their sponsorship and continued support.
+Nature Week once again underscored the importance of local and international partnerships in safeguarding Anguilla’s natural heritage—and the enthusiasm of a community eager to learn, explore, and protect the island’s wild spaces.
+
+<div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+
+  <div style="flex: 1; min-width: 300px;">
+    <img src="{{ site.baseurl }}/docs/_news/images/night-hike-moth.jpg"
+         alt="Moth seen on night walk"
+         style="width: 100%; border-radius: 6px;">
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+    </p>
+  </div>
+
+  <div style="flex: 1; min-width: 300px;">
+    <img src="{{ site.baseurl }}/docs/_news/images/night-hike-spider.jpg"
+         alt="Big Spider"
+         style="width: 100%; border-radius: 6px;">
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+    </p>
+  </div>
+
+</div>
