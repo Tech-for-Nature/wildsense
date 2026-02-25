@@ -2,7 +2,7 @@
 layout: default
 title: "Anguilla National Trust Night Hike"
 date: 2025-11-25
-hero_image: "{{ site.baseurl }}/assets/images/news/591592605_1311861004312862_3059152727945315754_n.jpg"
+hero_image: "/assets/images/news/night-hike-25-11-2025/591592605_1311861004312862_3059152727945315754_n.jpg"
 summary: "Nature Week celebrations with a night hike."
 related_systems:
   - ami
@@ -17,18 +17,78 @@ Together, the events offered something for everyone, blending exploration, scien
 
 Nature Week once again underscored the importance of local and international partnerships in safeguarding Anguilla’s natural heritage—and the enthusiasm of a community eager to learn, explore, and protect the island’s wild spaces.
 
-<div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+<h2 class="ws-section-title mt-5">Night hike gallery</h2>
 
-  <div style="flex: 1; min-width: 300px;">
-    <img src="{{ site.baseurl }}/assets/images/news/night-hike-moth.jpg"
-         alt="Moth seen on night walk"
-         style="width: 100%; border-radius: 6px;">
+<div class="d-flex align-items-center gap-2">
+
+  <button class="btn btn-outline-success btn-sm"
+          type="button"
+          onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: -520, behavior: 'smooth' });"
+          aria-label="Scroll left">‹</button>
+
+  <div id="nightHikeThumbs"
+       style="display:flex; gap:12px; overflow-x:auto; padding:6px 2px; scroll-behavior:smooth; -webkit-overflow-scrolling:touch;">
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/lepi-photo.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/lepi-photo.jpg" alt="Moth photo"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/spider-web-photo.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/spider-web-photo.jpg" alt="Spider web photo"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/bee-photo.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/bee-photo.jpg" alt="Bee photo"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/lizard-in-hand.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/lizard-in-hand.jpg" alt="Lizard in hand"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/lizard-on-tree.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/lizard-on-tree.jpg" alt="Lizard on tree"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/Davids-talk.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/Davids-talk.jpg" alt="David's talk"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/night-moth-2.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/night-moth-2.jpg" alt="Night moth close-up"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <!-- Optional: keep these too if you want -->
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/night-hike-moth.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/night-hike-moth.jpg" alt="Night hike moth"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/night-hike-spider.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/night-hike-spider.jpg" alt="Night hike spider"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
+    <a href="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/night-bee.jpg" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/assets/images/news/night-hike-25-11-2025/night-bee.jpg" alt="Night bee"
+           style="height:96px; width:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.10); display:block;">
+    </a>
+
   </div>
 
-  <div style="flex: 1; min-width: 300px;">
-    <img src="{{ site.baseurl }}/assets/images/news/night-hike-spider.jpg"
-         alt="Spider recorded during the night hike"
-         style="width: 100%; border-radius: 6px;">
-  </div>
+  <button class="btn btn-outline-success btn-sm"
+          type="button"
+          onclick="document.getElementById('nightHikeThumbs').scrollBy({ left: 520, behavior: 'smooth' });"
+          aria-label="Scroll right">›</button>
 
 </div>
+
+<p class="small text-muted mt-2 mb-0">
+  Click an image to open the full-size version in a new tab.
+</p>
