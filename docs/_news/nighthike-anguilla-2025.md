@@ -1,16 +1,11 @@
 ---
-layout: project
-title: "Anguilla – Shining a Light on Anguilla’s Moths"
-tagline: "AI-assisted biodiversity monitoring on a Caribbean island"
-status: "In progress"
-region: "Caribbean"
-project_id: "anguilla"
-
-partners:
-  - "Anguilla National Trust"
-  - "UK Centre for Ecology & Hydrology"
-
-hero_image: "/docs/_news/images/591592605_1311861004312862_3059152727945315754_n.jpg"
+layout: default
+title: "Anguilla National Trsut Night Hike"
+date: 2025-11-25
+hero_image: /docs/_news/images/591592605_1311861004312862_3059152727945315754_n.jpg
+summary: "Nature Week celebrations with a night hike."
+related_systems:
+  - ami
 ---
 
 **Anguilla National Trust Nature Week** brought the island’s unique wildlife and conservation efforts into sharp focus.
