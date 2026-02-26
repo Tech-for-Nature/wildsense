@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Anguilla National Trust"
+title: "2025 Nature Week celebrations presentaions"
 date: 2025-11-25
 hero_image: "{{ site.baseurl }}/docs/assets/images/news/good-karma-11-2025/isabel-iguana.jpg"
-summary: "Nature Week celebrations presentaions."
+summary: "Anguilla National Trust’s Nature Week wrapped up with engaging presentations showcasing new research"
 related_systems:
   - ami
 ---
