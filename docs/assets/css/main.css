@@ -2,6 +2,7 @@
    WildSense base theme
    Dark forest + phthalo green vibes (unified)
    + Default page header + responsive hero + dark content panels
+   + Readable “A4-ish” text width
 --------------------------------------------------------- */
 
 :root {
@@ -22,6 +23,9 @@
 
   --ws-radius-lg: 1.25rem;
   --ws-radius-md: 0.9rem;
+
+  /* Readability control (A4-ish line length) */
+  --ws-readable: 960px;
 }
 
 /* ---------------------------------------------------------
@@ -36,6 +40,14 @@ body {
 
 main {
   background: transparent;
+}
+
+/* Cap overall content width even if default uses container-fluid */
+main.container,
+main.container-fluid {
+  max-width: var(--ws-readable);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -98,7 +110,7 @@ section.border-top {
 
 .ws-page-summary {
   color: var(--ws-text-muted);
-  max-width: 980px;
+  max-width: var(--ws-readable);
   margin: 0;
 }
 
@@ -110,9 +122,11 @@ section.border-top {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* More square hero */
 .ws-hero-img {
   width: 100%;
-  height: clamp(220px, 35vh, 520px); /* shrinks/grows with screen size */
+  aspect-ratio: 4 / 3;   /* change to 1 / 1 for perfectly square */
+  height: auto;
   object-fit: cover;
   display: block;
 }

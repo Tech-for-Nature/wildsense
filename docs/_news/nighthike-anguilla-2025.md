@@ -2,7 +2,7 @@
 layout: default
 title: "Anguilla National Trust Night Hike"
 date: 2025-11-25
-hero_image: "/assets/images/news/night-hike-25-11-2025/591592605_1311861004312862_3059152727945315754_n.jpg"
+hero_image: "/assets/images/news/night-hike-25-11-2025/spider-web-photo.jpg"
 summary: "Nature Week celebrations with a night hike."
 related_systems:
   - ami
