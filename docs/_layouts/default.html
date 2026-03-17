@@ -25,16 +25,20 @@
   {% include google_analytics.html %}
 </head>
 
-<body class="ws-page">
+<body class="{% if page.full_width %}wildsense-home{% else %}ws-page{% endif %}">
   {% include navbar.html %}
 
-  <main class="container-fluid py-4">
+  <main class="{% if page.full_width %}container-fluid{% else %}container-fluid{% endif %} py-4">
 
     {%- comment -%}
     Auto header (Title + optional summary + optional hero image)
-    We DO NOT show this for pages that already have their own layout header (project/system/factsheet).
+    We DO NOT show this for:
+    - project pages
+    - system pages
+    - factsheets
+    - homepage/full-width landing pages
     {%- endcomment -%}
-    {% unless page.layout == "project" or page.layout == "system" or page.layout == "factsheet" %}
+    {% unless page.layout == "project" or page.layout == "system" or page.layout == "factsheet" or page.full_width %}
 
       {% if page.title %}
         <header class="ws-page-header mb-4">
@@ -66,8 +70,8 @@
     {%- comment -%}
     Related news carousel at bottom.
     Priority:
-      1) pages with project_id (e.g., project pages)
-      2) news posts with related_projects: [anguilla]
+      1) pages with project_id
+      2) pages/posts with related_projects
     {%- endcomment -%}
     {% assign related_id = nil %}
 
