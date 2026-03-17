@@ -42,9 +42,12 @@ main {
   background: transparent;
 }
 
-/* Constrain readable content pages only, not homepage */
-body.ws-page:not(.wildsense-home) main.container,
-body.ws-page:not(.wildsense-home) main.container-fluid {
+/* Readable width only for default content-page elements, not the homepage layout */
+.ws-page-header,
+.ws-hero,
+.system-page,
+.project-page,
+.news-page {
   max-width: var(--ws-readable);
   margin-left: auto;
   margin-right: auto;
