@@ -42,14 +42,9 @@ main {
   background: transparent;
 }
 
-/* Keep homepage full width */
-.wildsense-home {
-  max-width: none;
-}
-
-/* Constrain readable content pages only */
-.ws-page main.container,
-.ws-page main.container-fluid {
+/* Constrain readable content pages only, not homepage */
+body.ws-page:not(.wildsense-home) main.container,
+body.ws-page:not(.wildsense-home) main.container-fluid {
   max-width: var(--ws-readable);
   margin-left: auto;
   margin-right: auto;
